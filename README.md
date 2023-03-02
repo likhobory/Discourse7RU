@@ -2,7 +2,7 @@ Russian RAPIRA language files for Discourse
 =========================================
 
 Здесь находится альтернативная версия языковых файлов для [Discourse](https://github.com/discourse/discourse).
-Этот перевод появился после [значительного измеения в терминогогии исходного перевода](https://meta.discourse.org/t/quality-of-russian-translation/246837) в октябре 2022 года.
+Этот перевод появился после [значительного изменения в терминогогии](https://meta.discourse.org/t/quality-of-russian-translation/246837) исходного перевода в октябре 2022 года.
 
 Основные изменения в терминологии:
 
