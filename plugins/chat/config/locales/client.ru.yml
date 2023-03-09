@@ -93,6 +93,11 @@ ru:
         never: "Никогда"
         title: "Настройка почтовых уведомлений"
         when_away: "Если вы находитесь офлайн"
+      header_indicator_preference:
+        title: "Показывать в заголовке индикатор активности"
+        all_new: "Все новые сообщения"
+        dm_and_mentions: "Прямые сообщения и упоминания"
+        never: "Никогда"
       enable: "Включить чат"
       flag: "Пожаловаться"
       emoji: "Вставить эмодзи"
@@ -102,7 +107,7 @@ ru:
       in_reply_to: "В ответ на"
       heading: "Чат"
       join: "Подписаться"
-      new_messages: "Новые сообщения"
+      last_visit: "последний визит"
       mention_warning:
         dismiss: "Отклонить"
         invitations_sent:
