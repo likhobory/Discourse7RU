@@ -625,17 +625,29 @@ ru:
         pending:
           title: "В ожидании"
         approved:
-          title: "Одобренная жалоба"
+          title: "Одобренные"
+        approved_flag:
+          title: "Одобренные жалобы"
+        approved_user:
+          title: "Одобренные пользователи"
+        approved_post:
+          title: "Одобренные сообщения"
         rejected:
-          title: "Отклонённая жалоба"
+          title: "Отклонённые"
+        rejected_flag:
+          title: "Flag rejected"
+        rejected_user:
+          title: "User rejected"
+        rejected_post:
+          title: "Отклонённые сообщения"
         ignored:
-          title: "Проигнорированная жалоба"
+          title: "Проигнорированные жалобы"
         deleted:
-          title: "Удалённая тема или сообщение"
+          title: "Удалённые темы или сообщения"
         reviewed:
-          title: "(все рассмотренные)"
+          title: "Все рассмотренные"
         all:
-          title: "(все)"
+          title: "Все"
       context_question:
         delimiter: "или"
       types:
@@ -1500,16 +1512,16 @@ ru:
         security_key:
           register: "Зарегистрировать"
           title: "Физические ключи безопасности"
-          add: "Добавить физический ключ безопасности"
-          default_name: "Главный ключ безопасности"
+          add: "Добавить физический электронный ключ"
+          default_name: "Главный электронный ключ"
           iphone_default_name: "iPhone"
           android_default_name: "Android"
-          not_allowed_error: "Время регистрации ключа безопасности истекло или регистрация была отменена."
-          already_added_error: "Вы уже зарегистрировали этот ключ безопасности. Вам не нужно регистрировать его снова."
-          edit: "Изменить физический ключ безопасности"
+          not_allowed_error: "Время регистрации электронного ключа истекло или регистрация была отменена."
+          already_added_error: "Вы уже зарегистрировали этот электронный ключ. Вам не нужно регистрировать его снова."
+          edit: "Изменить физический электронный ключ"
           save: "Сохранить"
           edit_description: "Название ключа физической безопасности"
-          name_required_error: "Укажите название ключа безопасности"
+          name_required_error: "Укажите название электронного ключа."
       change_about:
         title: "Изменить информацию обо мне"
         error: "При изменении значения произошла ошибка."
@@ -1891,7 +1903,7 @@ ru:
       filters:
         all: "Все"
       stream:
-        posted_by: "Опубликовано"
+        posted_by: "Автор"
         sent_by: "Отправлено"
         private_message: "личное сообщение"
         the_topic: "тема"
@@ -2153,7 +2165,7 @@ ru:
       sent_activation_email_again_generic: "Мы отправили ещё одно письмо для активации. Доставка сообщения может занять несколько минут; не забудьте проверить папку со спамом."
       to_continue: "Пожалуйста, войдите"
       preferences: "Для изменения настроек профиля пользователя необходимо войти на сайт."
-      not_approved: "Ваш аккаунт ещё не одобрен. Когда появится возможность войти, вы получите письмо с уведомлением."
+      not_approved: "Аккаунт ещё не одобрен. Когда появится возможность войти, вы получите письмо."
       google_oauth2:
         name: "Google"
         title: "Войти через Google"
@@ -2500,7 +2512,7 @@ ru:
       title: "Уведомления об упоминании вашего @имени, об ответах на ваши сообщения, темы, личные сообщения и т.д."
       none: "Не удаётся загрузить уведомления."
       empty: "Уведомления не найдены."
-      post_approved: "Ваше сообщение одобрено"
+      post_approved: "Сообщение одобрено"
       reviewable_items: "Сообщения, находящиеся на премодерации"
       watching_first_post_label: "Новая тема"
       user_moved_post: "%{username} — перемещено"
@@ -2627,7 +2639,7 @@ ru:
       most_viewed: "По количеству просмотров"
       most_liked: "По количеству симпатий"
       select_all: "Выбрать всё"
-      clear_all: "Сбросить всё"
+      clear_all: "Отменить выбор"
       too_short: "Слишком короткое слово для поиска."
       open_advanced: "Расширенный поиск"
       clear_search: "Очистить"
@@ -3012,7 +3024,7 @@ ru:
         }
       bumped_at_title: |
         Первое сообщение: %{createdAtDate}
-        Опубликовано: %{bumpedAtDate}
+        Последнее сообщение: %{bumpedAtDate}
       browse_all_categories_latest: "<a href='%{basePath}/categories'>Просмотрите все разделы</a> или <a href='%{basePath}/latest'>ознакомьтесь с последними темами</a>."
       browse_all_categories_latest_or_top: "<a href='%{basePath}/categories'>Просмотрите все разделы</a>, <a href='%{basePath}/latest'>ознакомьтесь с последними</a> или самыми популярными темами:"
       browse_all_tags_or_latest: "<a href='%{basePath}/tags'>Просмотрите все теги</a> или <a href='%{basePath}/latest'>ознакомьтесь с последними темами</a>."
@@ -3560,7 +3572,7 @@ ru:
         add_post_notice: "Сообщение от модератора…"
         change_post_notice: "Изменить сообщение модератора…"
         delete_post_notice: "Удалить сообщение модератора"
-        remove_timer: "Отменить таймер"
+        remove_timer: "Удалить таймер"
         edit_timer: "Изменить таймер"
       actions:
         people:
@@ -3793,7 +3805,7 @@ ru:
       search_priority:
         label: "Приоритет поиска"
         options:
-          normal: "Нормальный"
+          normal: "Обычный"
           ignore: "Игнорировать"
           very_low: "Очень низкий"
           low: "Низкий"
@@ -3899,7 +3911,7 @@ ru:
         other: "ещё %{count}"
     topic_statuses:
       warning:
-        help: "Это официальное предупреждение."
+        help: "Официальное предупреждение."
       bookmarked:
         help: "Вы добавили тему в закладки"
       locked:
@@ -4529,7 +4541,7 @@ ru:
   admin_js:
     type_to_filter: "Фильтрация настроек…"
     admin:
-      title: "Discourse Admin"
+      title: "Администратор Discourse"
       moderator: "Модератор"
       tags:
         remove_muted_tags_from_latest:
@@ -4622,7 +4634,7 @@ ru:
           total: "Всего за всё время"
           no_data: "Нет данных для отображения."
           trending_search:
-            more: '<a href="%{basePath}/admin/logs/search_logs">Поисковые логи</a>'
+            more: '<a href="%{basePath}/admin/logs/search_logs">Журнал поиска</a>'
             disabled: 'Отчёт о поисковых запросах отключён. Включить <a href="%{basePath}/admin/site_settings/category/all_results?filter=log%20search%20queries">журнал поисковых запросов</a> для сбора данных.'
           average_chart_label: Среднее
           filters:
@@ -5139,7 +5151,7 @@ ru:
             few: "Тема отстает на %{count} коммита!"
             many: "Тема отстает на %{count} коммитов!"
             other: "Тема отстает на %{count} коммита!"
-          compare_commits: "(Смотрите новые коммиты)"
+          compare_commits: "(Показать новые коммиты)"
           remote_theme_edits: "Если вы хотите отредактировать эту тему, необходимо <a href='%{repoURL}' target='_blank'>отправить внесённое изменение в её репозиторий</a>"
           repo_unreachable: "Не удалось связаться с git-репозиторием этой темы. Сообщение об ошибке:"
           imported_from_archive: "Эта тема была импортирована из zip-файла"
@@ -5314,9 +5326,9 @@ ru:
             body: "Текст сообщения"
             rejection_message: "Письмо с отказом"
           filters:
-            from_placeholder: "from@gsp-example.com"
-            to_placeholder: "to@gsp-example.com"
-            cc_placeholder: "cc@gsp-example.com"
+            from_placeholder: "from@example.com"
+            to_placeholder: "to@example.com"
+            cc_placeholder: "cc@example.com"
             subject_placeholder: "Заголовок…"
             error_placeholder: "Ошибка"
         logs:
@@ -5324,7 +5336,7 @@ ru:
           filters:
             title: "Фильтр"
             user_placeholder: "Имя пользователя"
-            address_placeholder: "name@gsp-example.com"
+            address_placeholder: "name@example.com"
             type_placeholder: "дайджест, подписка…"
             reply_key_placeholder: "Ключ ответа"
             smtp_transaction_response_placeholder: "SMTP ID"
@@ -5482,7 +5494,7 @@ ru:
           actions:
             block: "Заблокировать"
             do_nothing: "Разрешить"
-            allow_admin: "Разрешить админов"
+            allow_admin: "Разрешить администраторов"
           form:
             label: "Новое правило:"
             ip_address: "IP-адрес"
@@ -5697,7 +5709,7 @@ ru:
         suspended_by: "Кем заморожен"
         silence_reason: "Причина"
         silenced_by: "Кем заблокирован"
-        silence_modal_title: "Заблокировать пользователя"
+        silence_modal_title: "Блокировка пользователя"
         silence_duration: "Как долго пользователь будет заблокирован?"
         silence_reason_label: "Почему вы блокируете пользователя?"
         silence_reason_placeholder: "Причина блокировки"
@@ -6113,7 +6125,7 @@ ru:
         preview:
           link_text: "Предпросмотр выданных наград"
           plan_text: "Предпросмотр с анализом быстродействия"
-          modal_title: "Предосмотр запроса награды"
+          modal_title: "Предпросмотр запроса награды"
           sql_error_header: "В запросе произошла ошибка."
           error_help: "См. следующую ссылку с информацией по запросам для наград."
           bad_count_warning:
