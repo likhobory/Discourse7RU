@@ -635,9 +635,9 @@ ru:
         rejected:
           title: "Отклонённые"
         rejected_flag:
-          title: "Flag rejected"
+          title: "Отклонённые жалобы"
         rejected_user:
-          title: "User rejected"
+          title: "Отклонённые пользователи"
         rejected_post:
           title: "Отклонённые сообщения"
         ignored:
