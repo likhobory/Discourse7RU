@@ -15,6 +15,7 @@ ru:
           actions:
             chat_channel_status_change: "Изменение статуса канала чата"
             chat_channel_delete: "Удаление канала чата"
+            chat_auto_remove_membership: "Автоматическое удаление участников из каналов"
       api:
         scopes:
           descriptions:
@@ -32,7 +33,7 @@ ru:
       disabled_for_topic: "Чат в этой теме отключён."
       bot: "Бот"
       create: "Создать"
-	    cancel: "Отмена"
+      cancel: "Отмена"
       cancel_reply: "Отменить ответ"
       chat_channels: "Каналы"
       browse_all_channels: "Просмотреть все каналы"
@@ -125,6 +126,7 @@ ru:
         composer: "Редактор чата"
         channels_list: "Список каналов чата"
       no_public_channels: "Вы не присоединились ни к одному каналу."
+      kicked_from_channel: "Вы больше не имеете доступа к этому каналу."
       only_chat_push_notifications:
         title: "Отправлять только push-уведомления в чате"
         description: "Запретить отправку всех push-уведомлений, не связанных с чатом."
@@ -434,6 +436,7 @@ ru:
           composer_code: "%{shortcut} Код (только в редакторе)"
           drawer_open: "%{shortcut} Открыть панель чата"
           drawer_close: "%{shortcut} Закрыть панель чата"
+          mark_all_channels_read: "%{shortcut} Пометить все каналы как прочитанные"
     topic_statuses:
       chat:
         help: "Чат включён для этой темы"
