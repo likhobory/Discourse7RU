@@ -1312,12 +1312,36 @@ ru:
       home: "Домашняя страница по умолчанию"
       staged: "Сымитированный"
       staff_counters:
-        flags_given: "Полезные жалобы"
-        flagged_posts: "Сообщения с жалобами"
-        deleted_posts: "Удалённые сообщения"
-        suspensions: "Заморозки"
-        warnings_received: "Предупреждения"
-        rejected_posts: "Отклонённые сообщения"
+        flags_given:
+          one: '<span class="%{className}">%{count}</span> полезная жалоба'
+          few: '<span class="%{className}">%{count}</span> полезные жалобы'
+          many: '<span class="%{className}">%{count}</span> полезных жалоб'
+          other: '<span class="%{className}">%{count}</span> полезных жалоб'
+        flagged_posts:
+          one: '<span class="%{className}">%{count}</span> сообщение с жалобой'
+          few: '<span class="%{className}">%{count}</span> сообщения с жалобами'
+          many: '<span class="%{className}">%{count}</span> сообщений с жалобами'
+          other: '<span class="%{className}">%{count}</span> сообщений с жалобами'
+        deleted_posts:
+          one: '<span class="%{className}">%{count}</span> удалённое сообщение'
+          few: '<span class="%{className}">%{count}</span> удалённых сообщения'
+          many: '<span class="%{className}">%{count}</span> удалённых сообщений'
+          other: '<span class="%{className}">%{count}</span> удалённых сообщений'
+        suspensions:
+          one: '<span class="%{className}">%{count}</span> заморозка'
+          few: '<span class="%{className}">%{count}</span> заморозки'
+          many: '<span class="%{className}">%{count}</span> заморозок'
+          other: '<span class="%{className}">%{count}</span> заморозок'
+        warnings_received:
+          one: '<span class="%{className}">%{count}</span> предупреждение'
+          few: '<span class="%{className}">%{count}</span> предупреждения'
+          many: '<span class="%{className}">%{count}</span> предупреждений'
+          other: '<span class="%{className}">%{count}</span> предупреждений'
+        rejected_posts:
+          one: '<span class="%{className}">%{count}</span> отклонённое сообщение'
+          few: '<span class="%{className}">%{count}</span> отклонённых сообщения'
+          many: '<span class="%{className}">%{count}</span> отклонённых сообщений'
+          other: '<span class="%{className}">%{count}</span> отклонённых сообщений'
       messages:
         all: "Все"
         inbox: "Входящие"

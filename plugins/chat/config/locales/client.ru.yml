@@ -78,6 +78,7 @@ ru:
       click_to_join: "Нажмите здесь для просмотра доступных каналов."
       close: "Закрыть"
       collapse: "Свернуть чат"
+      expand: "Развернуть чат"
       confirm_flag: "Действительно пожаловаться на сообщение пользователя %{username}?"
       deleted: "Сообщение было удалено. [view]"
       hidden: "Сообщение было скрыто. [view]"
@@ -376,6 +377,19 @@ ru:
         symbols: "Символы"
         search_placeholder: "Поиск по названию эмодзи и псевдониму…"
         no_results: "Нет результатов"
+
+      thread:
+        view_thread: Просмотреть ветку
+        replies:
+          one: "%{count} ответ"
+          few: "%{count} ответа"
+          many: "%{count} ответов"
+          other: "%{count} ответов"
+        label: Ветка
+      threads:
+        started_by: "Начата пользователем"
+        open: "Открыть ветку"
+
       draft_channel_screen:
         header: "Новое сообщение"
         cancel: "Отмена"

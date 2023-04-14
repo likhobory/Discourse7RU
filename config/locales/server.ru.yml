@@ -57,7 +57,7 @@ ru:
   topic_tag_changed:
     added_and_removed: "Добавлены теги: %{added}. Удалены теги %{removed}"
     added: "Добавлены теги: %{added}"
-    removed: "Удалены теги %{removed}"
+    removed: "Удалены теги: %{removed}"
   inline_oneboxer:
     topic_page_title_post_number: "#%{post_number}"
     topic_page_title_post_number_by_user: "#%{post_number} от пользователя %{username}"
@@ -2140,6 +2140,7 @@ ru:
     emoji_set: "Какую коллекцию эмодзи использовать?"
     emoji_autocomplete_min_chars: "Минимальное количество символов, необходимое для появления всплывающего окна с эмодзи"
     enable_inline_emoji_translation: "Включить перевод для встроенных эмодзи (без пробелов и знаков препинания)"
+    emoji_deny_list: "Эти эмодзи не будут доступны в меню или в шорткодах."
     approve_post_count: "Минимальное количество сообщений от новичка или обычного пользователя, которые должны быть утверждены"
     approve_unless_trust_level: "Сообщения от пользователей с уровнем доверия ниже указанного должны быть одобрены"
     approve_new_topics_unless_trust_level: "Новые темы от пользователей с уровнем доверия ниже указанного должны быть одобрены"
