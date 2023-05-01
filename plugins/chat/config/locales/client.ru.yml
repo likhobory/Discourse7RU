@@ -27,7 +27,7 @@ ru:
       chat_users_count: "Пользователи чата"
     chat:
       dates:
-        time_tiny: "ч:мм"
+        time_tiny: "h:mm"
       all_loaded: "Показать все сообщения"
       already_enabled: "Чат в этой теме уже включён . Обновите страницу."
       disabled_for_topic: "Чат в этой теме отключён."
@@ -139,6 +139,8 @@ ru:
       close_full_page: "Закрыть полноэкранный чат"
       open_message: "Открыть сообщение в чате"
       placeholder_self: "Напишите что-нибудь"
+      placeholder_channel: "Чат в канале %{channelName}"
+      placeholder_thread: "Чат в ветке"
       placeholder_users: "Чат с %{commaSeparatedNames}"
       placeholder_silenced: "В настоящее время вы не можете отправлять сообщения."
       placeholder_start_conversation_users: "Начать беседу с пользователем %{commaSeparatedUsernames}"
@@ -169,6 +171,8 @@ ru:
       title: "чат"
       title_capitalized: "Чат"
       upload: "Прикрепить файл"
+      upload_to_channel: "Загрузить в канал %{title}"
+      upload_to_thread: "Загрузить в ветку"
       uploaded_files:
         one: "%{count} файл"
         few: "%{count} файла"
@@ -259,6 +263,7 @@ ru:
         italic_text: "текст, выделенный курсивом"
         bold_text: "Жирный"
         code_text: "Код"
+        send: "Отправить"
       quote:
         original_channel: 'Первоначально отправлено в <a href="%{channelLink}">%{channel}</a>'
         copy_success: "Цитата из чата скопирована в буфер обмена"
@@ -386,6 +391,7 @@ ru:
           many: "%{count} ответов"
           other: "%{count} ответов"
         label: Ветка
+        close: "Закрыть ветку"
       threads:
         started_by: "Начата пользователем"
         open: "Открыть ветку"
