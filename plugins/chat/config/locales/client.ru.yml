@@ -1,8 +1,9 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
+# Альтернативная русификация языковых файлов Discourse.
 #
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
+# Последние обновления доступны по адресу:
+# https://github.com/likhobory/Discourse7RU
+#
+# @author likhobory <likhobory@mail.ru>
 
 ru:
   js:
@@ -217,7 +218,11 @@ ru:
           members: Участники
           settings: Настройки
       channel_edit_name_slug_modal:
+        title: Изменить канал
+        input_placeholder: Добавить название
+        slug_description: Слаг канала используется в URL-адресе вместо названия канала.
         name: Название канала
+        slug: Слаг канала (необязательно)
       channel_edit_description_modal:
         title: Изменить описание
         input_placeholder: Добавить описание
