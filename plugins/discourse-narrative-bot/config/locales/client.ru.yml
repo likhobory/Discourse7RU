@@ -1,0 +1,13 @@
+# Альтернативная русификация языковых файлов Discourse.
+#
+# Последние обновления доступны по адресу:
+# https://github.com/likhobory/Discourse7RU
+#
+# @author likhobory <likhobory@mail.ru>
+
+ru:
+  js:
+    discourse_narrative_bot:
+      welcome_post_type:
+        new_user_track: "Включить интерактивное обучение для всех новых пользователей"
+        welcome_message: "Отправлять всем новым пользователям приветственное сообщение с кратким руководством"
