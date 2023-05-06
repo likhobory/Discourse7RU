@@ -1,8 +1,9 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
+# Альтернативная русификация языковых файлов Discourse.
 #
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
+# Последние обновления доступны по адресу:
+# https://github.com/likhobory/Discourse7RU
+#
+# @author likhobory <likhobory@mail.ru>
 
 ru:
   js:
@@ -2585,6 +2586,7 @@ ru:
       reaction_2: "<span>%{username}, %{username2}</span> %{description}"
       votes_released: "%{description} — завершено"
       new_features: "Появились новые функции!"
+      admin_problems: "Новые советы в панели администратора"
       dismiss_confirmation:
         body:
           default:
