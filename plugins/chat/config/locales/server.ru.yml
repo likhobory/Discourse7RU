@@ -35,38 +35,69 @@ ru:
     chat_channel_archive_complete:
       title: "Архивация канала завершена"
       subject_template: "Архивация канала успешно завершена"
+      text_body_template: |
+        Архивация канала %{channel_hashtag_or_name} успешно завершена. Сообщения были скопированы в тему [%{topic_title}](%{topic_url}).
     chat_channel_archive_failed:
       title: "Не удалось заархивировать канал"
       subject_template: "Не удалось заархивировать канал"
+      text_body_template: |
+        Не удалось заархивировать канал чата %{channel_hashtag_or_name}. Сообщений заархивировано: %{messages_archived}. Частично заархивированные сообщения были скопированы в тему [%{topic_title}](%{topic_url}). Посетите канал %{channel_url}, чтобы повторить попытку архивации.
     chat_channel_archive_failed_no_topic:
       title: "Не удалось заархивировать канал"
       subject_template: "Не удалось заархивировать канал"
+      text_body_template: |
+        Не удалось заархивировать канал чата %{channel_hashtag_or_name}. Ни одно сообщение не было заархивировано. Тема не была создана по следующим причинам:
+
+          %{topic_validation_errors}
+
+        Посетите канал %{channel_url}, чтобы повторить попытку архивации.
+
   chat:
     deleted_chat_username: удалён
     errors:
-      channel_exists_for_category: "Канал для этой категории уже существует"
+      channel_exists_for_category: "Канал для этого раздела уже существует"
+      channel_new_message_disallowed:
+        archived: "Канал заархивирован, новые сообщения отправлять нельзя"
+        closed: "Канал закрыт, новые сообщения отправлять нельзя"
+        read_only: "Канал только для чтения, новые сообщения отправлять нельзя"
+      channel_modify_message_disallowed:
+        archived: "Канал заархивирован, сообщения нельзя редактировать или удалять"
+        closed: "Канал закрыт, сообщения нельзя редактировать или удалять"
+        read_only: "Канал только для чтения, сообщения нельзя редактировать или удалять"
       user_cannot_send_message: "В настоящее время вы не можете отправлять сообщения."
       rate_limit_exceeded: "Превышен лимит сообщений, которые могут быть отправлены в течение 30 секунд"
       auto_silence_from_flags: "На сообщение поступило большое количество жалоб, и пользователь был заблокирован."
       channel_cannot_be_archived: "Канал в данный момент не может быть заархивирован, он должен быть либо закрыт, либо открыт для архивации."
       duplicate_message: "Вы отправляете одно и то же сообщение слишком часто."
       delete_channel_failed: "Не удалось удалить канал, попробуйте ещё раз."
+      minimum_length_not_met:
+        one: "Сообщение слишком короткое, должно содержать не менее %{count} символа."
+        few: "Сообщение слишком короткое, должно содержать не менее %{count} символов."
+        many: "Сообщение слишком короткое, должно содержать не менее %{count} символов."
+        other: "Сообщение слишком короткое, должно содержать не менее %{count} символов."
       message_too_long:
-        one: "Сообщение слишком длинное, максимум символов — %{count}."
-        few: "Сообщение слишком длинное, максимум символов — %{count}."
-        many: "Сообщение слишком длинное, максимум символов — %{count}."
-        other: "Сообщение слишком длинное, максимум символов — %{count}."
+        one: "Сообщение слишком длинное, должно содержать не более %{count} символа."
+        few: "Сообщение слишком длинное, должно содержать не более %{count} символов."
+        many: "Сообщение слишком длинное, должно содержать не более %{count} символов."
+        other: "Сообщение слишком длинное, должно содержать не более %{count} символов."
+      draft_too_long: "Сообщение в черновике слишком длинное."
       max_reactions_limit_reached: "Новые реакции на это сообщение запрещены."
       message_move_invalid_channel: "Исходный и целевой каналы должны быть общедоступными."
       message_move_no_messages_found: "Не найдено сообщений с указанными идентификаторами сообщений."
       cant_update_direct_message_channel: "Такие свойства канала как название и описание, не могут быть обновлены."
-      not_accepting_dms: "%{username} в данный момент не принимает сообщения."
+      not_accepting_dms: "Пользователь %{username} в данный момент не принимает сообщения."
       actor_ignoring_target_user: "Вы игнорируете %{username}, поэтому не можете отправлять им личные сообщения."
       actor_muting_target_user: "Вы отключили все уведомления от %{username}, поэтому вы не можете отправлять им личные сообщения."
       actor_disallowed_dms: "Вы решили запретить пользователям отправлять вам личные и прямые сообщения чата, поэтому вы не можете создавать новые прямые сообщения."
       actor_preventing_target_user_from_dm: "Вы решили запретить %{username} отправлять вам личные и прямые сообщения чата, поэтому вы не можете создавать для них новые прямые сообщения."
       user_cannot_send_direct_messages: "Вы не можете отправлять прямые сообщения."
-      over_chat_max_direct_message_users_allow_self: "Вы не можете создать прямое сообщение более чем с %{count} пользователем."
+      over_chat_max_direct_message_users_allow_self: "Вы не можете создать прямое сообщение с самим собой."
+      over_chat_max_direct_message_users:
+        one: "Вы не можете создать прямое сообщение более чем с %{count} пользователем."
+        few: "Вы не можете создать прямое сообщение более чем с %{count} пользователями."
+        many: "Вы не можете создать прямое сообщение более чем с %{count} пользователями."
+        other: "Вы не можете создать прямое сообщение более чем с %{count} пользователями."
+      original_message_not_found: "The ancestor of the message you are replying cannot be found or has been deleted."
     reviewables:
       message_already_handled: "Спасибо, но мы уже рассмотрели жалобу на это сообщение, поэтому жаловаться на него снова нет необходимости."
       actions:
@@ -111,12 +142,13 @@ ru:
         many: "Пользователь @%{acting_username} переместил %{count} сообщений в канал [%{channel_name}](%{first_moved_message_url})."
         other: "Пользователь @%{acting_username} переместил %{count} сообщений в канал [%{channel_name}](%{first_moved_message_url})."
       dm_title:
-        single_user: "%{username}"
+        single_user: "Пользователь %{username}"
+        multi_user: "Пользователи %{comma_separated_usernames}"
         multi_user_truncated:
-          one: "%{comma_separated_usernames} и ещё %{count}"
-          few: "%{comma_separated_usernames} и ещё %{count}"
-          many: "%{comma_separated_usernames} и ещё %{count}"
-          other: "%{comma_separated_usernames} и ещё %{count}"
+          one: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователь"
+          few: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователя"
+          many: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователей"
+          other: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователей"
     category_channel:
       errors:
         slug_contains_non_ascii_chars: "содержит символы не в ascii-кодировке"
@@ -174,20 +206,20 @@ ru:
         other: "У вас в чате есть новые сообщения"
       from: "%{site_name}"
       subject:
-        direct_message_from_1: "[%{email_prefix}] Новое сообщение от %{username}"
+        direct_message_from_1: "[%{email_prefix}] Новое сообщение от пользователя %{username}"
         direct_message_from_2: "[%{email_prefix}] Новое сообщение от пользователей %{username1} и %{username2}"
         direct_message_from_more:
-          one: "[%{email_prefix}] Новое сообщение от пользователя %{username} и еще %{count}"
-          few: "[%{email_prefix}] Новое сообщение от пользователя %{username} и еще %{count}"
-          many: "[%{email_prefix}] Новое сообщение от пользователя %{username} и еще %{count}"
-          other: "[%{email_prefix}] Новое сообщение от пользователя %{username} и еще %{count}"
+          one: "[%{email_prefix}] Новое сообщение от пользователя %{username} и ещё %{count} пользователя"
+          few: "[%{email_prefix}] Новое сообщение от пользователя %{username} и ещё %{count} пользователей"
+          many: "[%{email_prefix}] Новое сообщение от пользователя %{username} и ещё %{count} пользователей"
+          other: "[%{email_prefix}] Новое сообщение от пользователя %{username} и ещё %{count} пользователей"
         chat_channel_1: "[%{email_prefix}] Новое сообщение в канале «%{channel}»"
         chat_channel_2: "[%{email_prefix}] Новое сообщение в каналах «%{channel1}» и «%{channel2}»"
         chat_channel_more:
-          one: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и еще %{count}"
-          few: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и еще %{count}"
-          many: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и еще %{count}"
-          other: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и еще %{count}"
+          one: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и ещё в %{count} канале"
+          few: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и ещё в %{count} каналах"
+          many: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и ещё в %{count} каналах"
+          other: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и ещё в %{count} каналах"
         chat_channel_and_direct_message: "[%{email_prefix}] Новое сообщение в канале «%{channel}» и от пользователя %{username}"
       unsubscribe: "Этот дайджест чата рассылается с сайта %{site_link} в период вашего отсутствия на форуме. Для отмены подписки измените %{email_preferences_link} или %{unsubscribe_link}."
       unsubscribe_no_link: "Этот дайджест чата рассылается с сайта %{site_link} в период вашего отсутствия на форуме. Настройка рассылки: %{email_preferences_link}."
@@ -209,4 +241,4 @@ ru:
       when_away: Если вы находитесь офлайн
   category:
     cannot_delete:
-      has_chat_channels: "Категорию удалить нельзя: в ней есть каналы чата."
+      has_chat_channels: "Раздел удалить нельзя: в нем есть каналы чата."
