@@ -603,7 +603,7 @@ ru:
         no_results: "Нет результатов"
 
       thread:
-        title: "Заголовок"
+        title: "Название"
         view_thread: Просмотреть ветку
         default_title: "Ветка #%{thread_id}"
         replies:
@@ -702,3 +702,7 @@ ru:
           few: "Уведомления чата —%{count} непрочитанных уведомления"
           many: "Уведомления чата —%{count} непрочитанных уведомлений"
           other: "Уведомления чата —%{count} непрочитанных уведомлений"
+    styleguide:
+      sections:
+        chat:
+          title: Чат
