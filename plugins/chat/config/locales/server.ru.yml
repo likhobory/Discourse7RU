@@ -241,4 +241,4 @@ ru:
       when_away: Если вы находитесь офлайн
   category:
     cannot_delete:
-      has_chat_channels: "Раздел удалить нельзя: в нем есть каналы чата."
+      has_chat_channels: "Раздел удалить нельзя: в нём есть каналы чата."
