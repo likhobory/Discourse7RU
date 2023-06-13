@@ -610,7 +610,7 @@ ru:
       thread:
         title: "Название"
         view_thread: Просмотреть ветку
-        default_title: "Ветка #%{thread_id}"
+        default_title: "Ветка"
         replies:
           one: "%{count} ответ"
           few: "%{count} ответа"

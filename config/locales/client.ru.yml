@@ -1991,52 +1991,6 @@ ru:
       logout_disabled: "Выход отключён, пока сайт находится в режиме «только для чтения»"
     staff_writes_only_mode:
       enabled: "Сайт находится в режиме «только для персонала». Пожалуйста, продолжайте просмотр, но отвечать, выражать симпатии и выполнять другие действия, влияющие на контент, могут только сотрудники."
-    too_few_topics_and_posts_notice_MF: |
-      Давайте <a href="https://blog.discourse.org/2014/08/building-a-discourse-community/" target="_blank" rel="noopener noreferrer">приступим к обсуждению!</a> Есть { currentTopics, plural,
-          one {<strong>#</strong> тема}
-          few {<strong>#</strong> темы}
-          many {<strong>#</strong> тем}
-        other {<strong>#</strong> тем}
-      } и { currentPosts, plural,
-          one {<strong>#</strong> сообщение}
-          few {<strong>#</strong> сообщения}
-          many {<strong>#</strong> сообщений}
-        other {<strong>#</strong> сообщений}
-      }. Пользователи должны больше читать и отвечать — мы рекомендуем по крайней мере {requiredTopics, plural,
-          one {<strong>#</strong> тему}
-          few {<strong>#</strong> темы}
-          many {<strong>#</strong> тем}
-        other {<strong>#</strong> тем}
-      } и { requiredPosts, plural,
-          one {<strong>#</strong> сообщение}
-          few {<strong>#</strong> сообщения}
-          many {<strong>#</strong> сообщений}
-        other {<strong>#</strong> сообщений}
-      }. Только персонал может видеть это сообщение.
-    too_few_topics_notice_MF: |
-      Давайте <a href="https://blog.discourse.org/2014/08/building-a-discourse-community/" target="_blank" rel="noopener noreferrer">приступим к обсуждению!</a> Есть { currentTopics, plural,
-          one {<strong>#</strong> тема}
-          few {<strong>#</strong> темы}
-          many {<strong>#</strong> тем}
-        other {<strong>#</strong> тем}
-      }. Пользователи должны больше читать и отвечать — мы рекомендуем по крайней мере {requiredTopics, plural,
-          one {<strong>#</strong> тему}
-          few {<strong>#</strong> темы}
-          many {<strong>#</strong> тем}
-        other {<strong>#</strong> тем}
-      }. Только персонал может видеть это сообщение.
-    too_few_posts_notice_MF: |
-      Давайте <a href="https://blog.discourse.org/2014/08/building-a-discourse-community/" target="_blank" rel="noopener noreferrer">приступим к обсуждению!</a> Есть { currentPosts, plural,
-          one {<strong>#</strong> сообщение}
-          few {<strong>#</strong> сообщения}
-          many {<strong>#</strong> сообщений}
-        other {<strong>#</strong> сообщений}
-      }. Пользователи должны больше читать и отвечать — мы рекомендуем по крайней мере {requiredPosts, plural,
-          one {<strong>#</strong> сообщение}
-          few {<strong>#</strong> сообщения}
-          many {<strong>#</strong> сообщений}
-        other {<strong>#</strong> сообщений}
-      }. Только персонал может видеть это сообщение.
     logs_error_rate_notice:
       reached_hour_MF: |
         <b>{relativeAge}</b> – <a href='{url}' target='_blank'>{rate, plural, one {# ошибка в час} few {# ошибки в час} many {# ошибок в час} other {# ошибки в час}}</a>: достигнут предел для настроек сайта — {limit, plural, one {# ошибка в час} few {# ошибки в час} many {# ошибок в час} other {# ошибки в час}}.
@@ -2508,6 +2462,7 @@ ru:
       image_alt_text:
         aria_label: Альтернативный текст для изображения
       delete_image_button: Удалить изображение
+      toggle_image_grid: Изменить расположение изображений (вертикальное/горизонтальное)
     notifications:
       tooltip:
         regular:
@@ -4467,18 +4422,23 @@ ru:
       hide_sidebar: "Скрыть боковую панель"
       unread_count:
         one: "%{count} непрочитанная"
-        few: "%{count} непрочитанных"
+        few: "%{count} непрочитанные"
         many: "%{count} непрочитанных"
         other: "%{count} непрочитанных"
       new_count:
         one: "%{count} новая"
-        few: "%{count} новых"
+        few: "%{count} новые"
         many: "%{count} новых"
         other: "%{count} новых"
       toggle_section: "Свернуть / развернуть секцию"
       more: "Ещё"
       all_categories: "Все разделы"
       all_tags: "Все теги"
+      categories_form:
+        save: "Сохранить"
+        title: "Изменить навигацию по разделам"
+        filter_placeholder: "Фильтр разделов"
+        no_categories: "Разделы, соответствующие введённому значению, не обнаружены."
       sections:
         custom:
           add: "Добавить секцию"
@@ -4584,6 +4544,7 @@ ru:
               content: "Премодерация"
               title: "Сообщения, на которые поступили жалобы, и другие элементы, находящиеся на премодерации"
               pending_count: "В ожидании: %{count}"
+        global_section: "Глобальная секция, доступна всем"
     welcome_topic_banner:
       title: "Создать приветственную тему"
       description: "Ваша приветственная тема — это первое, что прочитают новички. Постарайтесь максимально коротко и ярко выразить в ней наиболее важную информацию, которую вы хотите донести до новых пользователей форума."
@@ -5499,6 +5460,7 @@ ru:
             revoke_moderation: "Отзыв права модератора"
             backup_create: "Создание резервной копии"
             deleted_tag: "Удаление тега"
+            update_directory_columns: "Обновление заголовков в списке пользователей"
             deleted_unused_tags: "Удаление неиспользуемых тегов"
             renamed_tag: "Переименование тега"
             revoke_email: "Отзыв адреса электронной почты"
@@ -5712,11 +5674,15 @@ ru:
             maximum:
               key: "Максимум"
               type: "Целое значение"
-              description: "Максимальное количество символов, вводимых в текстовое поле. Для полей типа «Множественный выбор» - максимальное количество выбыраемых элементов."
+              description: "Максимальное количество символов, вводимых в текстовое поле."
             pattern:
               key: "Шаблон"
               type: "Регулярное выражение"
               description: "Значение текстового поля должно сооответствовать указанному регулярному выражению."
+            type:
+              key: "Тип"
+              type: "Строка"
+              description: "Для полей ввода вы можете указать ожидаемый тип вводимого значения (текст|электронная почта|дата|номер|url|телефон|цвет)"
         preview_modal:
           title: "Предпросмотр шаблона"
         field_placeholders:
@@ -5727,7 +5693,9 @@ ru:
             second: "Параметр 2"
             third: "Параметр 3"
         edit_category:
-
+          toggle_freeform: "Шаблон формы выключен"
+          toggle_form_template: "Шаблон формы включён"
+          select_template: "Выберите шаблоны формы"
           select_template_help: "Добавление/изменение шаблонов"
       impersonate:
         title: "Войти от имени пользователя"
