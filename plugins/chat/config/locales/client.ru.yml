@@ -123,6 +123,8 @@ ru:
       heading: "Чат"
       join: "Подписаться"
       last_visit: "последний визит"
+      summarization:
+        summarize: "Сводка"
       mention_warning:
         dismiss: "dismiss"
         cannot_see: "Пользователь %{username} не был уведомлён, поскольку не имеет доступа к этому каналу."
@@ -622,11 +624,18 @@ ru:
           started_by: "Начата пользователем"
         settings: "Настройки"
         last_reply: "последний ответ"
-      threads:
-        open: "Открыть ветку"
-        list: "Текущие обсуждения"
-        none: "Вы не участвуете ни в каких ветках этого канала."
-
+        notifications:
+          regular:
+            title: "Уведомлять"
+            description: "Вы будете уведомлены, если кто-то упомянет ваше @имя в этой ветке."
+          tracking:
+            title: "Следить"
+            description: "В ветке и на канале будет показано количество новых ответов. Вы будете уведомлены, если кто-то упомянет ваше @имя в этой ветке."
+        participants_other_count:
+          one: "+ ещё %{count}"
+          few: "+ ещё %{count}"
+          many: "+ ещё %{count}"
+          other: "+ ещё %{count}"
       draft_channel_screen:
         header: "Новое сообщение"
         cancel: "Отмена"

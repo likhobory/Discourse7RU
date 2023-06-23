@@ -1239,13 +1239,13 @@ ru:
         enable: "Включить боковую панель"
         options: "Настройки"
         categories_section: "Разделы"
-        categories_section_instruction: "Выбранные разделы будут отображаться в соответствующей секции боковой панели."
+        categories_section_instruction: "Выбранные разделы будут отображаться в соответствующей секции меню навигации. Если не выбран ни один раздел, в меню навигации будут отображаться самые популярные разделы."
         tags_section: "Теги"
-        tags_section_instruction: "Выбранные теги будут отображаться в соответствующей секции боковой панели."
+        tags_section_instruction: "Выбранные теги будут отображаться в соответствующей секции меню навигации. Если не выбран ни один тег , в меню навигации будут отображаться самые популярные теги."
         navigation_section: "Навигация"
-        list_destination_instruction: "При нажатии на ссылку списка тем на боковой панели с новыми или непрочитанными темами открывать…"
-        list_destination_default: "домашнюю страницу и отображать значок с количеством непрочитанных тем"
-        list_destination_unread_new: "новые/непрочитанные темы и отображать количество непрочитанных тем"
+        navigation_section_instruction: "Если в меню навигации есть новые или непрочитанные темы…"
+        link_to_filtered_list_checkbox_description: "При открытии раздела отображать только новые/непрочитанные темы"
+        show_count_new_items_checkbox_description: "Отображать количество новых элементов"
       change: "Изменить"
       featured_topic: "Избранная тема:"
       moderator: "%{user} — модератор"
@@ -1458,7 +1458,8 @@ ru:
         tags: "Теги"
         interface: "Интерфейс"
         apps: "Приложения"
-        sidebar: "Боковая панель"
+        navigation_menu: "Меню навигации"
+
       change_password:
         success: "(письмо отправлено)"
         in_progress: "(отправка письма)"
@@ -2031,10 +2032,13 @@ ru:
         other: "Есть <b>%{count}</b> ответов."
       description_time_MF: |
         Есть {replyCount, plural, one { <b>#</b> ответ} few { <b>#</b> ответа} many { <b>#</b> ответов} other { <b>#</b> ответов}} с расчётным временем чтения <b>{readingTime, plural, one {# минута} few {# минуты} many {# минут} other {# минут}}</b>.
-      enable: "Сводка по теме"
+      enable: "Показать популярные сообщения"
       disable: "Показать все сообщения"
       short_label: "Сводка"
       short_title: "Просмотр сводки по этой теме: отображаются самые интересные сообщения по мнению сообщества."
+      strategy:
+        button_title: "Создать сводку	"
+        title: "Сводка по теме"
     deleted_filter:
       enabled_description: "Эта тема содержит удалённые сообщения, которые сейчас скрыты."
       disabled_description: "Показаны удалённые сообщения темы."
@@ -4434,8 +4438,7 @@ ru:
       more: "Ещё"
       all_categories: "Все разделы"
       all_tags: "Все теги"
-      categories_form:
-        save: "Сохранить"
+      categories_form_modal:
         title: "Изменить навигацию по разделам"
         filter_placeholder: "Фильтр разделов"
         no_categories: "Разделы, соответствующие введённому значению, не обнаружены."
@@ -4485,20 +4488,12 @@ ru:
             unread_with_count: "Непрочитанные (%{count})"
             archive: "Архив"
         tags:
-          links:
-            add_tags:
-              content: "Добавить теги"
-              title: "Вы не добавили ни одного тега. Чтобы добавить тег, нажмите сюда."
           none: "Вы не добавили ни одного тега."
           click_to_get_started: "Нажмите здесь, чтобы начать."
           header_link_text: "Теги"
           header_action_title: "Редактировать теги боковой панели"
           configure_defaults: "Настроить стандартные теги"
         categories:
-          links:
-            add_categories:
-              content: "Добавить разделы"
-              title: "Вы не добавили ни одного раздела. Чтобы добавить раздел, нажмите сюда."
           none: "Вы не добавили ни одного раздела."
           click_to_get_started: "Нажмите здесь, чтобы начать."
           header_link_text: "Разделы"
@@ -4518,8 +4513,8 @@ ru:
             badges:
               content: "Награды"
               title: "Все награды, которые можно получить"
-            everything:
-              content: "Все"
+            topics:
+              content: "Темы"
               title: "Все темы"
             faq:
               content: "Правила"
