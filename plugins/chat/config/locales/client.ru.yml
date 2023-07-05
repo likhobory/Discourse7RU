@@ -496,6 +496,8 @@ ru:
         followed: "Подписан"
         mobile_notification_level: "Мобильные push-уведомления"
         mute: "Отключить канал"
+        threading_enabled: "Включено"
+        threading_disabled: "Отключено"
         muted_on: "Включено"
         muted_off: "Выключено"
         notifications: "Уведомления"
@@ -636,10 +638,10 @@ ru:
             title: "Следить"
             description: "В ветке и на канале будет показано количество новых ответов. Вы будете уведомлены, если кто-то упомянет ваше @имя в этой ветке."
         participants_other_count:
-          one: "+ ещё %{count}"
-          few: "+ ещё %{count}"
-          many: "+ ещё %{count}"
-          other: "+ ещё %{count}"
+          one: "+ %{count}"
+          few: "+ %{count}"
+          many: "+ %{count}"
+          other: "+ %{count}"
       draft_channel_screen:
         header: "Новое сообщение"
         cancel: "Отмена"
