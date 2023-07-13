@@ -98,7 +98,9 @@ ru:
         few: "Вы не можете создать прямое сообщение более чем с %{count} пользователями."
         many: "Вы не можете создать прямое сообщение более чем с %{count} пользователями."
         other: "Вы не можете создать прямое сообщение более чем с %{count} пользователями."
-      original_message_not_found: "The ancestor of the message you are replying cannot be found or has been deleted."
+      original_message_not_found: "Исходное сообщение, на которое вы отвечаете, не найдено или было удалено."
+      thread_invalid_for_channel: "Ветка не является частью данного канала."
+      thread_does_not_match_parent: "Ветка не относится к родительскому сообщению."
     reviewables:
       message_already_handled: "Спасибо, но мы уже рассмотрели жалобу на это сообщение, поэтому жаловаться на него снова нет необходимости."
       actions:
@@ -171,6 +173,8 @@ ru:
         few: "и ещё %{count}"
         many: "и ещё %{count}"
         other: "и ещё %{count}"
+    summaries:
+      no_targets: "В выбранный период сообщений не было."
   discourse_push_notifications:
     popup:
       chat_mention:

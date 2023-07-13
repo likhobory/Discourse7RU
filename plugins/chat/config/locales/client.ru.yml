@@ -354,6 +354,15 @@ ru:
           about: Информация
           members: Участники
           settings: Настройки
+      new_message_modal:
+        title: Отправить сообщение
+        add_user_long: <kbd>shift + click</kbd> или <kbd>shift + enter</kbd><span>Добавить пользователя @%{username}</span>
+        add_user_short: <span>Добавить пользователя</span>
+        open_channel: <span>Открыть канал</span>
+        default_search_placeholder: "канал или @пользователь"
+        user_search_placeholder: "...добавить ещё пользователей"
+        disabled_user: "Пользователь отключил чат"
+        no_items: "Ничего не обнаружено"
       channel_edit_name_slug_modal:
         title: Изменить канал
         input_placeholder: Добавить название
@@ -369,9 +378,7 @@ ru:
         prefix: "Кому:"
         no_results: Нет результатов
         selected_user_title: "Отменить выбор пользователя %{username}"
-      channel_selector:
-        title: "Перейти на канал"
-        no_channels: "Нет каналов, соответствующих вашему запросу"
+
       channel:
         no_memberships: На этом канале нет участников
         no_memberships_found: Участники не найдены
