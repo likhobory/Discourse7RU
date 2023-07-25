@@ -359,7 +359,9 @@ ru:
         add_user_long: <kbd>shift + click</kbd> или <kbd>shift + enter</kbd><span>Добавить пользователя @%{username}</span>
         add_user_short: <span>Добавить пользователя</span>
         open_channel: <span>Открыть канал</span>
-        default_search_placeholder: "канал или @пользователь"
+        default_search_placeholder: "#канал или @пользователь"
+        default_channel_search_placeholder: "#канал"
+        default_user_search_placeholder: "@пользователь"
         user_search_placeholder: "...добавить ещё пользователей"
         disabled_user: "Пользователь отключил чат"
         no_items: "Ничего не обнаружено"
