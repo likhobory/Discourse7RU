@@ -337,9 +337,11 @@ ru:
       aria_label: "Фильтр по периоду"
     related_messages:
       title: "Связанные сообщения"
+      pill: "Связанные сообщения"
       see_all: 'Показать <a href="%{path}">все сообщения</a> от @%{username}…'
     suggested_topics:
-      title: "Похожие темы"
+      title: "Новые и непрочитанные темы"
+      pill: "Похожие"
       pm_title: "Похожие сообщения"
     about:
       simple_title: "О форуме"
@@ -1957,8 +1959,9 @@ ru:
         content: "Вот темы, которые вам может быть интересно прочитать в следующий раз."
       admin_guide:
         title: "Добро пожаловать на форум!"
-        content: "Прочтите руководство администратора для продолжения работы с форумом."
-        button: "Вперед!"
+        content: "<a href='%{admin_guide_url}'>Прочтите руководство администратора</a> для продолжения работы с форумом."
+        content_no_url: "Прочтите руководство администратора для продолжения работы с форумом."
+
     loading: "Загрузка…"
     errors:
       prev_page: "при попытке загрузки"
@@ -4224,11 +4227,11 @@ ru:
         few: "+ ещё %{count}"
         many: "+ ещё %{count}"
         other: "+ ещё %{count}"
-      granted:
-        one: "выдана %{count}"
-        few: "выдано %{count}"
-        many: "выдано %{count}"
-        other: "выданы %{count}"
+      awarded:
+        one: "Награждено: %{number}"
+        few: "Награждено: %{number}"
+        many: "Награждено: %{number}"
+        other: "Награждено: %{number}"
       select_badge_for_title: Использовать награду в качестве титула
       none: "(нет)"
       successfully_granted: "Награда %{badge} успешно выдана пользователю %{username}"

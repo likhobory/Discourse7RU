@@ -307,8 +307,8 @@ ru:
       title: "чат"
       title_capitalized: "Чат"
       upload: "Прикрепить файл"
-      upload_to_channel: "Загрузить в канал %{title}"
-      upload_to_thread: "Загрузить в ветку"
+      upload_to_channel: "Загрузить в канал «%{title}»"
+      upload_to_thread: "Загрузить в ветку сообщений"
       uploaded_files:
         one: "%{count} файл"
         few: "%{count} файла"
@@ -321,7 +321,7 @@ ru:
         read_only: "Только для чтения"
         archived_header: "Канал заархивирован"
         archived: "Архивные"
-        archive_failed: "Ошибка архивации канала. В <a target=\"_blank\" href=\"%{topic_url}\">целевую тему</a> было заархивировано %{completed} сообщений из %{total}. Нажмите «Повторить», чтобы попытаться завершить архивирование."
+        archive_failed: "Ошибка архивации канала. Было заархивировано %{completed} сообщений из %{total}. <a target=\"_blank\" href=\"%{topic_url}\">Целевая тема</a> была создана. Нажмите «Повторить», чтобы попытаться завершить архивирование."
         archive_failed_no_topic: "Ошибка архивации канала. %{completed} сообщений из %{total} было заархивировано, но целевая тема не была создана. Нажмите «Повторить», чтобы попытаться завершить архивирование."
         archive_completed: "См. <a target=\"_blank\" href=\"%{topic_url}\">архивную тему</a>."
         closed_header: "Канал закрыт"
@@ -391,7 +391,7 @@ ru:
           other: "%{count} участников"
       create_channel:
         threading:
-          label: "Использовать ветки"
+          label: "Использовать ветки сообщений"
         auto_join_users:
           public_category_warning: "Раздел %{category} является общедоступным. Автоматически добавлять в этот канал всех активных пользователей?"
           warning_1_group:
@@ -494,7 +494,7 @@ ru:
       settings:
         channel_wide_mentions_label: "Разрешить упоминания @all и @here"
         channel_wide_mentions_description: "Разрешить пользователям уведомлять всех участников канала %{channel}, используя @all, или только активных в данный момент участников, используя @here."
-        channel_threading_label: "Использовать ветки"
+        channel_threading_label: "Ветки сообщений"
         channel_threading_description: "При использовании веток ответы на сообщения чата будут создавать отдельные ветки обсуждений, которые будут существовать наряду с основным каналом."
         auto_join_users_label: "Автоматически добавлять пользователей"
         auto_join_users_info: "Ежечасная проверка пользователей, которые были активны за последние 3 месяца. Добавление их в этот канал, если у них есть доступ к разделу %{category}."
@@ -505,8 +505,8 @@ ru:
         followed: "Подписан"
         mobile_notification_level: "Мобильные push-уведомления"
         mute: "Отключить канал"
-        threading_enabled: "Включено"
-        threading_disabled: "Отключено"
+        threading_enabled: "Включены"
+        threading_disabled: "Отключены"
         muted_on: "Включено"
         muted_off: "Выключено"
         notifications: "Уведомления"
