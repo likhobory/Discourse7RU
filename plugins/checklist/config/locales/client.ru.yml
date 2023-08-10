@@ -1,0 +1,12 @@
+# Альтернативная русификация языковых файлов Discourse.
+#
+# Последние обновления доступны по адресу:
+# https://github.com/likhobory/Discourse7RU
+#
+# @author likhobory <likhobory@mail.ru>
+
+
+ru:
+  js:
+    checklist:
+      edit_reason: "изменение перечня "
