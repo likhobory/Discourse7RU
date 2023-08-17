@@ -4232,10 +4232,10 @@ ru:
         many: "+ ещё %{count}"
         other: "+ ещё %{count}"
       awarded:
-        one: "Награждено: %{number}"
-        few: "Награждено: %{number}"
-        many: "Награждено: %{number}"
-        other: "Награждено: %{number}"
+        one: "Выдана %{number} награда"
+        few: "Выданы %{number} награды"
+        many: "Выдано %{number} наград"
+        other: "Выдано %{number} наград"
       select_badge_for_title: Использовать награду в качестве титула
       none: "(нет)"
       successfully_granted: "Награда %{badge} успешно выдана пользователю %{username}"
@@ -5143,7 +5143,7 @@ ru:
         explain_preview: "Предпросмотр сайта с новым оформлением"
         syntax_error: "Ошибка синтаксиса"
         settings_editor: "Редактор настроек"
-        validation_settings_keys: "Каждый элемент должен содержать только ключи «настройка» и «значение»."
+        validation_settings_keys: "Каждый элемент должен содержать только ключи «setting» и «value»."
         validation_settings_deleted: "Эти настройки были удалены. Восстановите их и повторите попытку."
         validation_settings_added: "Эти настройки были добавлены. Удалите их и повторите попытку."
         save: "Сохранить"
