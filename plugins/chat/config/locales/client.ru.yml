@@ -11,6 +11,10 @@ ru:
       site_settings:
         categories:
           chat: Чат
+        chat_separate_sidebar_mode:
+          always: "Всегда"
+          fullscreen: "Когда чат отображается в полноэкранном режиме"
+          never: "Никогда"
       logs:
         staff_actions:
           actions:
@@ -112,6 +116,8 @@ ru:
         all_new: "Все новые сообщения"
         dm_and_mentions: "Прямые сообщения и упоминания"
         never: "Никогда"
+      separate_sidebar_mode:
+        title: "Показывать отдельные боковые панели для форума и чата"
       enable: "Включить чат"
       flag: "Пожаловаться"
       emoji: "Вставить эмодзи"
@@ -157,6 +163,7 @@ ru:
           few: "В группе «%{group_name}» и ещё в %{count} группах не разрешены упоминания."
           many: "В группе «%{group_name}» и ещё в %{count} группах не разрешены упоминания."
           other: "В группе «%{group_name}» и ещё в %{count} группах не разрешены упоминания."
+        channel_wide_mentions_disallowed: "Использование переменных @here и @all отключено на этом канале."
         too_many_members: "В группе «%{group_name}» слишком много участников. Никто из них не был уведомлён."
         too_many_members_multiple:
           one: "В группе «%{group_name}» и ещё в %{count} группе слишком много участников. Никто из них не был уведомлён."
@@ -523,7 +530,7 @@ ru:
         title: "Чат"
         export_messages:
           title: "Экспорт сообщений чата"
-          description: "Текущее ограничение на экспорт — 10 000 последних сообщений за последние шесть месяцев."
+          description: "Экспорт сообщений изо всех каналов чата"
           create_export: "Экспортировать"
           export_has_started: "Экспорт начался. Когда он завершится, вы получите личное сообщение."
       direct_messages:
@@ -636,7 +643,6 @@ ru:
       thread:
         title: "Название"
         view_thread: Просмотреть ветку
-        default_title: "Ветка"
         replies:
           one: "%{count} ответ"
           few: "%{count} ответа"
@@ -749,3 +755,7 @@ ru:
       sections:
         chat:
           title: Чат
+    sidebar:
+      panels:
+        chat:
+          label: "Чат"

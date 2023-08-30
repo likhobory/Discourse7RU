@@ -2035,7 +2035,7 @@ ru:
       no_internet: "Нет подключения к Интернету."
       refresh_page: "Обновить страницу"
     summary:
-      in_progress: "Создание сводки с использованием ИИ..."
+      in_progress: "Создание сводки с использованием ИИ"
       summarized_on: "Сводка с использованием ИИ создана %{date}" 
       model_used: "Используемый ИИ: %{model}"
       outdated: "Сводка утарела"
@@ -2265,7 +2265,7 @@ ru:
         many: "%{count} результатов"
         other: "%{count} результатов"
       filter_placeholder: Поиск…
-      filter_placeholder_with_any: Найти или создать...
+      filter_placeholder_with_any: Найти или создать…
       create: "Создать: «%{content}»"
       max_content_reached:
         one: "Можно выбрать только %{count} элемент."
@@ -2870,6 +2870,17 @@ ru:
           title: "Отложить новые"
           topics: "Отложить новые темы"
           posts: "Отложить новые сообщения"
+          topics_with_count:
+            one: "Отложить %{count} новую тему"
+            few: "Отложить %{count} новых темы"
+            many: "Отложить %{count} новых тем"
+            other: "Отложить %{count} новых тем"
+          replies_with_count:
+            one: "Отложить %{count} новый ответ"
+            few: "Отложить %{count} новых ответа"
+            many: "Отложить %{count} новых ответов"
+            other: "Отложить %{count} новых ответов"
+          replies: "Отложить новые ответы"
           untrack: "Перестать следить за этими темами, чтобы они не появлялись в секции «Новые»"
         dismiss_new_with_selected:
           one: "Отложить новые (%{count})"
@@ -4054,6 +4065,12 @@ ru:
           many: "Новые (%{count})"
           other: "Новые (%{count})"
         help: "Темы, созданные за последние несколько дней"
+        all: "Все"
+        all_with_count: "Все (%{count})"
+        topics: "Темы"
+        topics_with_count: "Темы (%{count})"
+        replies: "Ответы"
+        replies_with_count: "Ответы (%{count})"
       posted:
         title: "Мои сообщения"
         help: "Темы, в которых вы принимали участие"
@@ -4272,7 +4289,7 @@ ru:
       selector_no_tags: "Без тегов"
       changed: "Теги изменены:"
       tags: "Теги"
-      choose_for_topic: "Выберите теги..."
+      choose_for_topic: "Выберите теги…"
       choose_for_topic_required:
         one: "Выберите как минимум %{count} тег…"
         few: "Выберите как минимум %{count} тега…"
@@ -5756,10 +5773,10 @@ ru:
           cancel: "Отмена"
           name:
             label: "Название шаблона"
-            placeholder: "Введите название шаблона..."
+            placeholder: "Введите название шаблона…"
           template:
             label: "Шаблон"
-            placeholder: "Создайте шаблон в формате YAML..."
+            placeholder: "Создайте шаблон в формате YAML…"
           preview: "Предпросмотр"
         delete_confirm: Вы действительно хотите удалить этот шаблон?"
         quick_insert_fields:
