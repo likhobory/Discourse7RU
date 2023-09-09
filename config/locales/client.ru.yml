@@ -2534,16 +2534,16 @@ ru:
       liked: "<span>%{username}</span> %{description}"
       liked_2: "<span class='double-user'>%{username}, %{username2}</span> %{description}"
       liked_many:
-        one: "<span class='multi-user'>%{username}, %{username2} и ещё %{count}</span> %{description}"
-        few: "<span class='multi-user'>%{username}, %{username2} и ещё %{count}</span> %{description}"
-        many: "<span class='multi-user'>%{username}, %{username2} и ещё %{count}</span> %{description}"
-        other: "<span class='multi-user'>%{username}, %{username2} и ещё %{count}</span> %{description}"
+        one: "<span class='multi-user'>%{username} и ещё %{count}</span> %{description}"
+        few: "<span class='multi-user'>%{username} и ещё %{count}</span> %{description}"
+        many: "<span class='multi-user'>%{username} и ещё %{count}</span> %{description}"
+        other: "<span class='multi-user'>%{username} и ещё %{count}</span> %{description}"
       liked_by_2_users: "%{username}, %{username2}"
       liked_by_multiple_users:
-        one: "%{username}, %{username2} и ещё %{count}"
-        few: "%{username}, %{username2} и ещё %{count}"
-        many: "%{username}, %{username2} и ещё %{count}"
-        other: "%{username}, %{username2} и ещё %{count}"
+        one: "%{username} и ещё %{count}"
+        few: "%{username} и ещё %{count}"
+        many: "%{username} и ещё %{count}"
+        other: "%{username} и ещё %{count}"
       liked_consolidated_description:
         one: "Понравилось %{count} ваше сообщение"
         few: "Понравилось %{count} ваших сообщения"
@@ -3515,7 +3515,7 @@ ru:
       errors:
         create: "К сожалению, не удалось создать сообщение из-за ошибки. Попробуйте ещё раз."
         edit: "К сожалению, не удалось изменить сообщение. Попробуйте ещё раз."
-        upload: "К сожалению, не удалось загрузить файл. Попробуйте ещё раз."
+        upload: "К сожалению, не удалось загрузить файл %{file_name}. Попробуйте ещё раз."
         file_too_large: "К сожалению, этот файл слишком большой (максимально допустимый размер %{max_size_kb} КБ). Почему бы не загрузить этот файл в облако, а затем поделиться ссылкой?"
         file_size_zero: "Извините, похоже, что-то пошло не так, файл, который вы пытаетесь загрузить, имеет нулевой размер. Пожалуйста, попробуйте ещё раз."
         file_too_large_humanized: "К сожалению, этот файл слишком большой (максимально допустимый размер - %{max_size}). Почему бы не загрузить этот файл в облако, а затем поделиться ссылкой?"
@@ -4218,6 +4218,7 @@ ru:
         print: "%{shortcut} Распечатать тему"
         defer: "%{shortcut} Отложить тему"
         topic_admin_actions: "%{shortcut} Открыть в теме меню действий администратора"
+        archive_private_message: "%{shortcut} Архивировать / разархивировать личное сообщение"
       search_menu:
         title: "Меню результатов поиска"
         prev_next: "%{shortcut} Перемещение по результатам поиска"
@@ -5072,7 +5073,6 @@ ru:
         enabled: "Включён?"
         is_enabled: "Д"
         not_enabled: "Н"
-        change_settings: "Настройки плагина"
         change_settings_short: "Настройки"
         howto: "Как установить плагин?"
         official: "Официальный плагин"
@@ -5118,7 +5118,8 @@ ru:
             label: "Резервная копия"
             title: "Создать резервную копию"
             confirm: "Запустить резервное копирование?"
-            without_uploads: "Да (исключая загруженные файлы)"
+            include_uploads: "Включить в копию все загрузки"
+            s3_upload_warning: 'В резервную копию попадет только информация из базы данных. В копию не будут включены загрузки, что означает, что все изображения и другие загруженные файлы могут отсутствовать, если резервная копия будет восстановлена на другом хостинге. <b>Чтобы включить полное резервное копирование, включая загрузки S3, ознакомьтесь с <a href="https://meta.discourse.org/t/-/276535" target="_blank">этим руководством</a>.</b>'
           download:
             label: "Скачать"
             title: "Отправить письмо со ссылкой для скачивания"
@@ -5819,6 +5820,7 @@ ru:
           title: "Предпросмотр шаблона"
         field_placeholders:
           validations: "Введите значение для проверки"
+          id: "Введите идентификатор"
           label: "Введите метку"
           placeholder: "Введите заполнитель"
           none_label: "Выберите элемент"

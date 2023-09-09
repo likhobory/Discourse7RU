@@ -8,7 +8,7 @@
 ru:
   site_settings:
     chat_separate_sidebar_mode: "Показывать отдельные боковые панели для форума и чата."
-    chat_enabled: "Включить плагин чата."
+    chat_enabled: "Включить чат."
     enable_public_channels: "Включить публичные каналы на основе разделов."
     chat_allowed_groups: "Пользователи в этих группах могут общаться в чате. Обратите внимание, что сотрудники всегда могут получить доступ к чату."
     chat_channel_retention_days: "Сообщения чата в обычных каналах будут храниться указанное здесь количество дней. Установите значение в «0», чтобы сохранять сообщения навсегда."
@@ -135,7 +135,8 @@ ru:
         disagree:
           title: "Отклонить"
         ignore:
-          title: "Игнорировать"
+          title: "Ничего не делать"
+          description: "Проигнорировать жалобу, удалив её из очереди, и не предпринимать никаких действий."
       direct_messages:
         transcript_title: "Содержимое предыдущих сообщений в канале %{channel_name}"
         transcript_body: "Чтобы дать больше контекста, мы отображаем содержимое предыдущих сообщений этой беседы (до десяти):\n\n%{transcript}"
@@ -155,6 +156,40 @@ ru:
           few: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователя"
           many: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователей"
           other: "Пользователи %{comma_separated_usernames} и ещё %{count} пользователей"
+          mention_warning:
+        dismiss: "Отклонить"
+        cannot_see: "Пользователь %{first_identifier} не был уведомлён, поскольку не имеет доступа к этому каналу."
+        cannot_see_multiple:
+          one: "Пользователь %{first_identifier} и ещё %{count} пользователь не были уведомлены, поскольку не имеют доступа к этому каналу."
+          few: "Пользователь %{first_identifier} и ещё %{count} пользователя не были уведомлены, поскольку не имеют доступа к этому каналу."
+          many: "Пользователь %{first_identifier} и ещё %{count} пользователей не были уведомлены, поскольку не имеют доступа к этому каналу."
+          other: "Пользователь %{first_identifier} и ещё %{count} пользователей не были уведомлены, поскольку не имеют доступа к этому каналу."
+        invitations_sent:
+          one: "Приглашение отправлено"
+          few: "Приглашения отправлены"
+          many: "Приглашений отправлены"
+          other: "Приглашений отправлены"
+        invite: "Пригласить в канал"
+        without_membership: "Пользователь %{first_identifier} не подписан на этот канал."
+        without_membership_multiple:
+          one: "Пользователь %{first_identifier} и ещё %{count} пользователь не подписаны на этот канал."
+          few: "Пользователь %{first_identifier} и ещё %{count} пользователя не подписаны на этот канал."
+          many: "Пользователь %{first_identifier} и ещё %{count} пользователей не подписаны на этот канал."
+          other: "Пользователь %{first_identifier} и ещё %{count} пользователей не подписаны на этот канал."
+        group_mentions_disabled: "В группе «%{first_identifier}» не разрешены упоминания."
+        group_mentions_disabled_multiple:
+          one: "В группе «%{first_identifier}» и ещё в %{count} группе не разрешены упоминания."
+          few: "В группе «%{first_identifier}» и ещё в %{count} группах не разрешены упоминания."
+          many: "В группе «%{first_identifier}» и ещё в %{count} группах не разрешены упоминания."
+          other: "В группе «%{first_identifier}» и ещё в %{count} группах не разрешены упоминания."
+        global_mentions_disallowed: "Использование переменных @here и @all отключено на этом канале."
+        too_many_members: "В группе «%{first_identifier}» слишком много участников. Никто из них не был уведомлён."
+        too_many_members_multiple:
+          one: "В группе «%{first_identifier}» и ещё в %{count} группе слишком много участников. Никто из них не был уведомлён."
+          few: "В группе «%{first_identifier}» и ещё в %{count} группах слишком много участников. Никто из них не был уведомлён."
+          many: "В группе «%{first_identifier}» и ещё в %{count} группах слишком много участников. Никто из них не был уведомлён."
+          other: "В группе «%{first_identifier}» и ещё в %{count} группах слишком много участников. Никто из них не был уведомлён."
+
     category_channel:
       errors:
         slug_contains_non_ascii_chars: "содержит символы не в ascii-кодировке"
