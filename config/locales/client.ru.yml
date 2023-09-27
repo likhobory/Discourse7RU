@@ -3053,9 +3053,9 @@ ru:
           false { вы также можете <a href="{basePath}/latest">просмотреть последние темы</a>}
           other {}
         }
-      bumped_at_title: |
-        Первое сообщение: %{createdAtDate}
-        Последнее сообщение: %{bumpedAtDate}
+      created_at: "Создано: %{date}"
+      bumped_at: "Последнее: %{date}"
+
       browse_all_categories_latest: "<a href='%{basePath}/categories'>Просмотрите все разделы</a> или <a href='%{basePath}/latest'>ознакомьтесь с последними темами</a>."
       browse_all_categories_latest_or_top: "<a href='%{basePath}/categories'>Просмотрите все разделы</a>, <a href='%{basePath}/latest'>ознакомьтесь с последними</a> или самыми популярными темами:"
       browse_all_tags_or_latest: "<a href='%{basePath}/tags'>Просмотрите все теги</a> или <a href='%{basePath}/latest'>ознакомьтесь с последними темами</a>."
@@ -4294,7 +4294,6 @@ ru:
       other_tags: "Другие теги"
       selector_all_tags: "Все теги"
       selector_no_tags: "Без тегов"
-      changed: "Теги изменены:"
       tags: "Теги"
       choose_for_topic: "Выберите теги…"
       choose_for_topic_required:
@@ -5759,7 +5758,7 @@ ru:
       form_templates:
         nav_title: "Шаблоны"
         title: "Шаблоны форм"
-        help: "Создать шаблон, который может быть использован для создания новых тем, сообщений и личных сообщений."
+        help: "Создание шаблона, который может быть использован для создания новых тем."
         new_template: "Новый шаблон"
         list_table:
           headings:
@@ -5774,7 +5773,7 @@ ru:
           close: "Закрыть"
           edit: "Изменить"
           delete: "Удалить"
-          toggle_preview: "Показать/скрыть предпросмотр"
+          toggle_preview: "Предпросмотр"
         new_template_form:
           submit: "Сохранить"
           cancel: "Отмена"
@@ -5804,30 +5803,30 @@ ru:
           validations:
             required:
               key: "Обязательное"
-              type: "Да/Нет"
+              type: "Логическое значение"
               description: "Поле, обязательное для заполнения."
             minimum:
               key: "Минимум"
-              type: "Целое значение"
+              type: "Целое число"
               description: "Минимальное количество символов, вводимых в текстовое поле."
             maximum:
               key: "Максимум"
-              type: "Целое значение"
+              type: "Целое число"
               description: "Максимальное количество символов, вводимых в текстовое поле."
             pattern:
               key: "Шаблон"
               type: "Регулярное выражение"
-              description: "Значение текстового поля должно соответствовать указанному регулярному выражению."
+              description: " Регулярное выражение, определяющее, какие данные разрешено вводить в текстовое поле."
             type:
               key: "Тип"
               type: "Строка"
-              description: "Для полей ввода вы можете указать ожидаемый тип вводимого значения (текст|электронная почта|дата|число|url|телефон|цвет)"
+              description: "Для полей ввода - можно указать ожидаемый тип вводимых данных (text|email|date|number|url|tel|color)"
         preview_modal:
           title: "Предпросмотр шаблона"
         field_placeholders:
           validations: "Введите значение для проверки"
-          id: "Введите идентификатор"
-          label: "Введите метку"
+          id: "Введите-уникальный-идентификатор"
+          label: "Введите название"
           placeholder: "Введите заполнитель"
           none_label: "Выберите элемент"
           choices:
@@ -5835,9 +5834,9 @@ ru:
             second: "Вариант 2"
             third: "Вариант 3"
         edit_category:
-          toggle_freeform: "Шаблон формы выключен"
+          toggle_freeform: "Шаблон формы отключён"
           toggle_form_template: "Шаблон формы включён"
-          select_template: "Выберите шаблоны формы"
+          select_template: "Выберите шаблоны форм"
           select_template_help: "Добавление/изменение шаблонов форм"
       impersonate:
         title: "Войти от имени пользователя"
@@ -6198,6 +6197,7 @@ ru:
         show_outdated: "Показать только устаревшие и недействительные значения"
         locale: "Язык:"
         more_than_50_results: "Найдено более 50 результатов. Пожалуйста, уточните параметры поиска."
+        no_results: "Искомый текст не найден"
         interpolation_keys: "Доступные ключи интерполяции:"
         outdated:
           title: "Этот перевод устарел"

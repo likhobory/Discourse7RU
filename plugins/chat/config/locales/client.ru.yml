@@ -26,6 +26,10 @@ ru:
           descriptions:
             chat:
               create_message: "Создать сообщение чата в указанном канале."
+      web_hooks:
+        chat_message_event:
+          name: "Событие сообщения чата"
+          details: "Происходит при создании, редактировании, удалении или восстановлении сообщения чата."
     about:
       chat_messages_count: "Сообщения чата"
       chat_channels_count: "Каналы чата"

@@ -20,6 +20,10 @@ ru:
           example: "Добро пожаловать в Discourse"
           paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         date_time_inputs:
+          title: "Ввод даты/времени"
+        menus:
+          title: "Меню"
+        toasts:
           title: "Поля ввода Даты/Времени"
         font_scale:
           title: "Шрифты"
@@ -88,8 +92,8 @@ ru:
           title: "Спиннеры"
         empty_state:
           title: "Пустое состояние"
-        rich_tooltip:
-          title: "Всплывающая подсказка"
+        tooltips:
+          title: "Всплывающие подсказки"
           description: "Описание"
           header: "Заголовок"
           hover_to_see: "Наведите курсор, чтобы увидеть всплывающую подсказку"
