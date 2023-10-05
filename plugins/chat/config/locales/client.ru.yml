@@ -35,7 +35,9 @@ ru:
       chat_channels_count: "Каналы чата"
       chat_users_count: "Пользователи чата"
     chat:
-      deleted_chat_username: удалён
+      text_copied: Текст скопирован в буфер обмена
+      link_copied: Ссылка скопирована в буфер обмена
+      deleted_chat_username: deleted
       dates:
         time_tiny: "h:mm"
       all_loaded: "Показать все сообщения"
@@ -271,6 +273,7 @@ ru:
       reply: "Ответить"
       edit: "Изменить"
       copy_link: "Копировать ссылку"
+      copy_text: "Копировать текст"
       rebake_message: "Перестроить HTML"
       retry_staged_message:
         title: "Ошибка сети"
