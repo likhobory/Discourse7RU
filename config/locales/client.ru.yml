@@ -509,6 +509,14 @@ ru:
         type_bonus:
           name: "Тип бонуса"
           title: "Некоторым проверяемым сообщениям сотрудник может назначить бонус, чтобы сделать их более приоритетными."
+      revise_and_reject_post:
+        title: "Пересмотр сообщения"
+        reason: "Причина"
+        send_pm: "Отправить личное сообщение"
+        feedback: "Отзыв"
+        custom_reason: "Опишите причину, по которой необходимо пересмотреть содержание сообщения"
+        other_reason: "Другое..."
+        optional: "необязятельно"
       stale_help: "Проверка сообщения уже была выполнена пользователем <b>%{username}</b>."
       claim_help:
         optional: "Вы можете зарезервировать этот контент за собой, чтобы другие не могли заняться его модерацией."
@@ -2147,6 +2155,7 @@ ru:
       security_key_not_allowed_error: "Время аутентификации электронного ключа истекло или регистрация была отменена."
       security_key_no_matching_credential_error: "В указанном электронном ключе не найдено подходящих учётных данных."
       security_key_support_missing_error: "Текущее устройство или браузер не поддерживает использование электронных ключей. Используйте другой метод."
+      security_key_invalid_response_error: "Аутентификация электронного ключа не выполнена по причине недопустимого ответа."
       email_placeholder: "Email / имя пользователя"
       caps_lock_warning: "Caps Lock включён"
       error: "Неизвестная ошибка"
@@ -2480,6 +2489,7 @@ ru:
           desc: Скрытые сообщения доступны только персоналу
         create_topic:
           label: "Новая тема"
+          desc: Создать новую тему
         shared_draft:
           label: "Общий черновик"
           desc: "Черновик темы, который будет виден только пользователям с необходимыми правами доступа"
@@ -5008,41 +5018,65 @@ ru:
         groups_filter: "Только для этих групп"
         delete_confirm: "Удалить вебхук?"
         topic_event:
-          name: "Событие темы"
-          details: "При создании, проверке, изменении или удалении темы."
+          group_name: "События темы"
+          topic_created: "Тема создана"
+          topic_revised: "Тема пересмотрена"
+          topic_edited: "Тема обновлена"
+          topic_destroyed: "Тема удалена"
+          topic_recovered: "Тема восстановлена"
         post_event:
-          name: "Событие сообщения"
-          details: "При создании, изменении, удалении или восстановлении сообщения."
-        user_event:
-          name: "Событие пользователя"
-          details: "При входе, выходе, создании, утверждении или изменении пользователя, при подтверждении электронной почты, а также при заморозке или разморозке пользователя."
+          group_name: "События сообщения"
+          post_created: "Сообщение создано"
+          post_edited: "Сообщение обнеовлено"
+          post_destroyed: "Сообщение удалено"
+          post_recovered: "Сообщение восстановлено"
         group_event:
-          name: "Событие группы"
-          details: "При создании, обновлении или удалении группы."
-        category_event:
-          name: "Событие раздела"
-          details: "При создании, обновлении или удалении раздела."
+          group_name: "События группы"
+          group_created: "Группа создана"
+          group_updated: "Группа обновлена"
+          group_destroyed: "Группа удалена"
         tag_event:
-          name: "Событие тега"
-          details: "При создании, обновлении или удалении тега."
+          group_name: "События тега"
+          tag_created: "Тег создан"
+          tag_updated: "Тег обновлён"
+          tag_destroyed: "Тег удалён"
+        category_event:
+          group_name: "События раздела"
+          category_created: "Раздел создан"
+          category_updated: "Category обновлён"
+          category_destroyed: "Category удалён"
+        user_event:
+          group_name: "События пользователя"
+          user_logged_in: "Пользователь вошёл в систему"
+          user_logged_out: "Пользователь вышел из системы"
+          user_confirmed_email: "Пользователь confirmed e-mail"
+          user_created: "Пользователь создан"
+          user_approved: "Пользователь одобрен"
+          user_updated: "Пользователь обновлён"
+          user_destroyed: "Пользователь удалён"
+          user_suspended: "Пользователь заморожен"
+          user_unsuspended: "Пользователь разморожен"
         reviewable_event:
-          name: "Событие премодерации"
-          details: "При готовности нового элемента к модерации и при обновлении его статуса."
-        notification_event:
-          name: "Событие уведомления"
-          details: "При добавлении нового элемента в ленту уведомлений пользователя."
-        user_promoted_event:
-          name: "Событие повышения уровня доверия"
-          details: "При повышении уровня доверия пользователя."
+          group_name: "События премодерации"
+          reviewable_created: "Сообщение добавлено в очередь на премодерацию"
+          reviewable_updated: "Обновление статуса модерируемого сообщения"
         user_badge_event:
-          name: "Событие награждения"
-          details: "При получении или отзыве награды."
-        group_user_event:
-          name: "Событие группового пользователя"
-          details: "При добавлении или удалении пользователя из группы."
+          group_name: "События награждения"
+          user_badge_granted: "Награда выдана"
+          user_badge_revoked: "Награда отозвана"
         like_event:
-          name: "Событие «Мне нравится»"
-          details: "При пометке сообщения статусом «Мне нравится»."
+          group_name: "События симпатий"
+          post_liked: "При выражении симпатии сообщению."
+        notification_event:
+          group_name: "События уведомления"
+          notification_created: "Пользователь получает уведомление"
+        group_user_event:
+          group_name: "События группы пользователя"
+          user_added_to_group: "Пользователь добавлен в группу"
+          user_removed_from_group: "Пользователь удалён из группы"
+        user_promoted_event:
+          group_name: "События повышения уровня доверия"
+          user_promoted: "Пользователю повышен уровень доверия"
         delivery_status:
           title: "Статус передачи"
           inactive: "Неактивна"
@@ -5180,6 +5214,9 @@ ru:
         install: "Установить"
         delete: "Удалить"
         delete_confirm: 'Вы действительно хотите удалить тему «%{theme_name}»?'
+        bulk_delete: 'Вы уверены?'
+        bulk_themes_delete_confirm: Будут удалены следующие темы, они больше не будут доступны пользователям форума:"
+        bulk_components_delete_confirm: "Будут удалены следующие компоненты, они больше не будут доступны пользователям форума:"
         color: "Цвет"
         opacity: "Прозрачность"
         copy: "Дублировать"
@@ -5249,6 +5286,8 @@ ru:
           convert_theme_tooltip: "Преобразовать эту тему в компонент"
           inactive_themes: "Неактивные темы:"
           inactive_components: "Неиспользуемые компоненты:"
+          selected: "Выбрано: %{count}"
+          cancel: "Отмена"
           broken_theme_tooltip: "Эта тема содержит ошибки в CSS, HTML или YAML"
           disabled_component_tooltip: "Этот компонент отключён"
           default_theme_tooltip: "Эта тема является темой по умолчанию"

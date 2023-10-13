@@ -27,9 +27,12 @@ ru:
             chat:
               create_message: "Создать сообщение чата в указанном канале."
       web_hooks:
-        chat_message_event:
-          name: "Событие сообщения чата"
-          details: "Происходит при создании, редактировании, удалении или восстановлении сообщения чата."
+        chat_event:
+          group_name: "События чата"
+          chat_message_created: "Сообщение создано"
+          chat_message_edited: "Сообщение изменено"
+          chat_message_trashed: "Сообщение удалено"
+          chat_message_restored: "Сообщение восстановлено"
     about:
       chat_messages_count: "Сообщения чата"
       chat_channels_count: "Каналы чата"
@@ -346,7 +349,6 @@ ru:
         back_to_all_channels: "Все каналы"
         back_to_channel: "Назад"
         tabs:
-          about: Информация
           members: Участники
           settings: Настройки
       new_message_modal:
@@ -510,6 +512,11 @@ ru:
         saved: "Сохранено"
         unfollow: "Отписаться"
         admin_title: "Администрирование"
+        settings_title: "Настройки"
+        info_title: "О канале"
+        category_label: "Раздел"
+        history_label: "История"
+        members_label: "Участники"
       admin:
         title: "Чат"
         export_messages:
@@ -589,18 +596,18 @@ ru:
           other: "Отвечают %{commaSeparatedUsernames} и ещё %{count} пользователей"
 
       retention_reminders:
-        public_none: "История канала хранится неограниченное время."
-        public:
-          one: "История канала хранится %{count} день."
-          few: "История канала хранится %{count} дня."
-          many: "История канала хранится %{count} дней."
-          other: "История канала хранится %{count} дней."
-        dm_none: "История личного чата хранится неограниченное время."
-        dm:
-          one: "История личного чата хранится %{count} день."
-          few: "История личного чата хранится %{count} дня."
-          many: "История личного чата хранится %{count} дней."
-          other: "История личного чата хранится %{count} дней."
+        indefinitely_short: "Неограниченное время"
+        indefinitely_long: В настройках чата указано хранить сообщения канала неограниченное время."
+        short:
+          one: "%{count} день."
+          few: "%{count} дня."
+          many: "%{count} дней."
+          other: "%{count} дней."
+        long:
+          one: "В настройках чата указано хранить сообщения канала %{count} день."
+          few: "В настройках чата указано хранить сообщения канала %{count} дня."
+          many: "В настройках чата указано хранить сообщения канала %{count} дней."
+          other: "В настройках чата указано хранить сообщения канала %{count} дней."
 
       flags:
         off_topic: "Это сообщение не имеет отношения к текущему обсуждению, как указано в названии канала, и, вероятно, его следует переместить в другое место."
