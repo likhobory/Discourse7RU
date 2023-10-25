@@ -1,0 +1,15 @@
+# Альтернативная русификация языковых файлов Discourse.
+#
+# Последние обновления доступны по адресу:
+# https://github.com/likhobory/Discourse7RU
+#
+# @author likhobory <likhobory@mail.ru>
+
+ru:
+  js:
+    spoiler:
+      title: Размыть спойлер
+      label:
+        show: "Показать скрытый контент"
+    composer:
+      spoiler_text: "Этот текст будет размыт"

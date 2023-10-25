@@ -1,0 +1,11 @@
+# Альтернативная русификация языковых файлов Discourse.
+#
+# Последние обновления доступны по адресу:
+# https://github.com/likhobory/Discourse7RU
+#
+# @author likhobory <likhobory@mail.ru>
+
+ru:
+  site_settings:
+    enable_markdown_footnotes: Включить Markdown для сносок на этом сайте
+    display_footnotes_inline: Включить встроенное расширение сносок
