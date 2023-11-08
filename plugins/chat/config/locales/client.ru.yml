@@ -288,7 +288,8 @@ ru:
       save: "Сохранить"
       select: "Выбрать"
       return_to_list: "Вернуться к списку каналов"
-      return_to_threads_list: "Вернуться к текущим обсуждениям"
+      return_to_channel: "Вернуться в канал"
+      return_to_threads_list: "Вернуться к списку веток"
       unread_threads_count:
         one: "У вас %{count} непрочитанное обсуждение"
         few: "У вас %{count} непрочитанных обсуждения"
@@ -659,7 +660,7 @@ ru:
           other: "+%{count}"
       threads:
         open: "Открыть ветку"
-        list: "Текущие обсуждения"
+        list: "Ветки"
         none: "Вы не участвуете ни в одной ветке обсуждения на этом канале."
       draft_channel_screen:
         header: "Новое сообщение"
