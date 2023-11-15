@@ -60,6 +60,7 @@ ru:
   chat:
     deleted_chat_username: удалён
     errors:
+      users_cant_be_added_to_channel: "Нельзя добавлять пользователей в этот канал."
       channel_exists_for_category: "Канал для этого раздела уже существует"
       channel_new_message_disallowed:
         archived: "Канал заархивирован, новые сообщения отправлять нельзя"
@@ -143,6 +144,11 @@ ru:
         transcript_title: "Содержимое предыдущих сообщений в канале %{channel_name}"
         transcript_body: "Чтобы дать больше контекста, мы отображаем содержимое предыдущих сообщений этой беседы (до десяти):\n\n%{transcript}"
     channel:
+      users_invited_to_channel:
+        one: "%{invited_users} пользователь был приглашён пользователем %{inviting_user}."
+        few: "%{invited_users} пользователя были приглашены пользователем %{inviting_user}."
+        many: "%{invited_users} пользователей были приглашены пользователем %{inviting_user}."
+        other: "%{invited_users} пользователей были приглашены пользователем %{inviting_user}."
       archive:
         first_post_raw: "Эта тема является архивом канала [%{channel_name}](%{channel_url})."
       messages_moved:
