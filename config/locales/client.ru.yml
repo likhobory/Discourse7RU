@@ -408,6 +408,7 @@ ru:
       copied: "Скопировано!"
       copy: "Скопировать код в буфер обмена"
       fullscreen: "Показать код в полноэкранном режиме"
+      view_code: "Посмотреть код"
     drafts:
       label: "Черновики"
       label_with_count: "Черновики (%{count})"
@@ -2048,7 +2049,7 @@ ru:
         <b>{relativeAge}</b> – <a href='{url}' target='_blank'>{rate, plural, one {# ошибка в час} few {# ошибки в час} many {# ошибок в час} other {# ошибки в час}}</a>: превышен предел для настроек сайта — {limit, plural, one {# ошибка в час} few {# ошибки в час} many {# ошибок в час} other {# ошибки в час}}.
       exceeded_minute_MF: |
         <b>{relativeAge}</b> – <a href='{url}' target='_blank'>{rate, plural, one {# ошибка в минуту} few {# ошибки в минуту} many {# ошибок в минуту} other {# ошибки в минуту}}</a>: превышен предел для настроек сайта — {limit, plural, one {# ошибка в минуту} few {# ошибки в минуту} many {# ошибок в минуту} other {# ошибки в минуту}}.
-    learn_more: "подробнее…"
+    learn_more: "Подробнее…"
     mute: Отключить
     unmute: Включить
     last_post: Последнее сообщение
@@ -2639,6 +2640,7 @@ ru:
         private_message: '%{username} отправил(а) вам личное сообщение в теме «%{topic}» — %{site_title}'
         linked: '%{username} добавил(а) ссылку на ваше сообщение в теме «%{topic}» —%{site_title}'
         watching_first_post: '%{username} создал(а) новую тему «%{topic}» —%{site_title}'
+        watching_category_or_tag: 'Пользователь %{username} опубликовал(а) запись в теме «%{topic}» — %{site_title}'
         confirm_title: "Уведомления включены —%{site_title}"
         confirm_body: "Уведомления были успешно включены."
         custom: "Уведомление от пользователя %{username} на сайте %{site_title}"
@@ -4517,6 +4519,7 @@ ru:
       sr_jump_bottom_button: "Перейти к последнему сообщению"
     fullscreen_table:
       expand_btn: "Развернуть таблицу"
+      view_table: "Посмотреть таблицу"
     second_factor_auth:
       redirect_after_success: "Двухфакторная аутентификация выполнена. Перенаправление на предыдущую страницу…"
     sidebar:
@@ -4739,9 +4742,9 @@ ru:
         latest_version: "Последняя версия"
         problems_found: "Несколько советов по текущим настройкам сайта"
         new_features:
-          title: "\U0001F381 Новые возможности"
-          dismiss: "Закрыть"
-          learn_more: "Подробнее"
+          title: "Новые возможности"
+          previous_announcements: "Описание новых возможностей для предыдущих версий форума вы можете посмотреть на сайте <a href='%{url}' target='_blank'>Discourse Meta</a>"
+          learn_more: "Подробнее…"
         last_checked: "Последняя проверка"
         refresh_problems: "Обновить"
         no_problems: "Проблем не обнаружено."
@@ -5144,8 +5147,11 @@ ru:
         not_enabled: "Н"
         change_settings_short: "Настройки"
         howto: "Как установить плагин?"
-        official: "Официальный плагин"
+        official: "Официальный плагин Discourse"
+        experimental: "Экспериментальный плагин"
         broken_route: "Не удаётся настроить ссылку на «%{name}». Отключите блокировщики рекламы и попробуйте перезагрузить страницу."
+        author: "Автор: %{author}"
+        experimental_badge: "Экспериментальная"
       navigation_menu:
         sidebar: "Боковая панель"
         header_dropdown: "Выпадающий список заголовков"

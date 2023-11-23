@@ -11,6 +11,7 @@ ru:
       title: "Руководство по стилю"
       welcome: "Чтобы начать, выберите секцию в меню слева."
       categories:
+        syntax: Синтаксис
         atoms: Атомы
         molecules: Молекулы
         organisms: Организмы

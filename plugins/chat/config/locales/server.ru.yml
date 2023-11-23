@@ -37,6 +37,7 @@ ru:
       direct_message_enabled_groups_invalid: "Для этого параметра необходимо указать хотя бы одну группу. Если вы не хотите, чтобы кто-либо, кроме сотрудников, отправлял прямые сообщения, выберите группу сотрудников."
       chat_upload_not_allowed_secure_uploads: "Загрузка в чат запрещена, если включено ограничение доступа к загружаемому контенту."
   system_messages:
+    private_channel_title: "Канал %{id}"
     chat_channel_archive_complete:
       title: "Архивация канала завершена"
       subject_template: "Архивация канала успешно завершена"
@@ -257,6 +258,7 @@ ru:
         other: "У вас в чате есть новые сообщения"
       from: "%{site_name}"
       subject:
+        private_message: "[%{email_prefix}] Новое сообщение"
         direct_message_from_1: "[%{email_prefix}] Новое сообщение от пользователя %{username}"
         direct_message_from_2: "[%{email_prefix}] Новое сообщение от пользователей %{username1} и %{username2}"
         direct_message_from_more:
