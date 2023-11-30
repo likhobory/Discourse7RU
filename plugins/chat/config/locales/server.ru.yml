@@ -222,6 +222,9 @@ ru:
         other: "и ещё %{count}"
     summaries:
       no_targets: "За выбранный период сообщений не было."
+    transcript:
+      default_thread_title: "Ветка"
+      split_thread_range: "Сообщения с %{start} по %{end} из %{total}"
   discourse_push_notifications:
     popup:
       chat_mention:
