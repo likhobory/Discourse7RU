@@ -476,21 +476,21 @@ ru:
       reviewable:
         type: "Сообщение чата"
       reactions:
-        only_you: "Вы отреагировали при помощи эмодзи :%{emoji}:"
-        you_and_single_user: "Вы и пользователь %{username} отреагировали при помощи эмодзи :%{emoji}:"
-        you_and_multiple_users: "Вы, пользователи %{commaSeparatedUsernames} и пользователь %{username} отреагировали при помощи эмодзи :%{emoji}:"
+        only_you: "<span>Вы отреагировали при помощи эмодзи </span>:%{emoji}:"
+        you_and_single_user: "<span>Вы и пользователь %{username} отреагировали при помощи эмодзи </span>:%{emoji}:"
+        you_and_multiple_users: "<span>Вы, пользователи %{commaSeparatedUsernames} и пользователь %{username} отреагировали при помощи эмодзи </span>:%{emoji}:"
         you_multiple_users_and_more:
-          one: "Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователь отреагировали при помощи эмодзи :%{emoji}:"
-          few: "Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователя отреагировали при помощи эмодзи :%{emoji}:"
-          many: "Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи :%{emoji}:"
-          other: "Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи :%{emoji}:"
-        single_user: "Пользователь %{username} отреагировал при помощи эмодзи %{emoji}:"
-        multiple_users: "Пользователи %{commaSeparatedUsernames} и пользователь %{username} отреагировали при помощи эмодзи :%{emoji}:"
+          one: "<span>Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователь отреагировали при помощи эмодзи </span>:%{emoji}:"
+          few: "<span>Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователя отреагировали при помощи эмодзи </span>:%{emoji}:"
+          many: "<span>Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи </span>:%{emoji}:"
+          other: "<span>Вы, пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи </span>:%{emoji}:"
+        single_user: "<span>Пользователь %{username} отреагировал при помощи эмодзи </span>:%{emoji}:"
+        multiple_users: "<span>Пользователи %{commaSeparatedUsernames} и пользователь %{username} отреагировали при помощи эмодзи </span>:%{emoji}:"
         multiple_users_and_more:
-          one: "Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователь отреагировали при помощи эмодзи :%{emoji}:"
-          few: "Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователя отреагировали при помощи эмодзи :%{emoji}:"
-          many: "Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи :%{emoji}:"
-          other: "Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи :%{emoji}:"
+          one: "<span>Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователь отреагировали при помощи эмодзи </span>:%{emoji}:"
+          few: "<span>Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователя отреагировали при помощи эмодзи </span>:%{emoji}:"
+          many: "<span>Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи </span>:%{emoji}:"
+          other: "<span>Пользователи %{commaSeparatedUsernames} и ещё %{count} пользователей отреагировали при помощи эмодзи </span>:%{emoji}:"
 
       composer:
         toggle_toolbar: "Переключить панель инструментов"
@@ -542,6 +542,9 @@ ru:
           description: "Экспорт сообщений изо всех каналов чата"
           create_export: "Экспортировать"
           export_has_started: "Экспорт начался. Когда он завершится, вы получите личное сообщение."
+      my_threads:
+        title: Мои ветки
+
       direct_messages:
         title: "Личный чат"
         new: "Создать личный чат"

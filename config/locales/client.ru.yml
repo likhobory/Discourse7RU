@@ -253,6 +253,7 @@ ru:
       error_caused_by: "Ошибка из-за темы «%{name}». <a target='blank' href='%{path}'>Нажмите здесь</a>, чтобы обновить, перенастроить или отключить её."
       only_admins: "(это сообщение отображается только для администраторов сайта)"
     broken_decorator_alert: "Сообщения могут отображаться неправильно: один из декораторов содержимого сообщений вызвал ошибку."
+    broken_page_change_alert: "Обработчик onPageChange вызвал ошибку. Дополнительную информацию можно найти в инструментах разработчика браузера."
     broken_plugin_alert: "Ошибка из-за плагина '%{name}'"
     s3:
       regions:
@@ -408,7 +409,7 @@ ru:
       copied: "Скопировано!"
       copy: "Скопировать код в буфер обмена"
       fullscreen: "Показать код в полноэкранном режиме"
-      view_code: "Посмотреть код"
+      view_code: "Просмотр кода"
     drafts:
       label: "Черновики"
       label_with_count: "Черновики (%{count})"
@@ -2245,6 +2246,9 @@ ru:
         totp: "Использовать аутентификацию через приложение"
         backup_code: "Использовать резервный код"
         security_key: "Использовать электронный ключ"
+      no_login_methods:
+        title: "Не настроены способы входа на форум"
+        description: "Ни один способ входа на форум не настроен. Для настройки админитраторы могут посетить страницу <a href='%{adminLoginPath}' target='_blank'>%{adminLoginPath}</a>."
     invites:
       accept_title: "Приглашение"
       welcome_to: "Добро пожаловать на сайт %{site_name}!"
@@ -3595,6 +3599,8 @@ ru:
         delete: "Удалить сообщение"
         undelete: "Отменить удаление"
         share: "Поделиться ссылкой на сообщение"
+        copy_title: "Скопировать в буфер ссылку на сообщение"
+        link_copied: "Ссылка скопирована!"
         more: "Ещё"
         delete_replies:
           confirm: "Хотите удалить также и ответы на это сообщение?"
@@ -4213,7 +4219,7 @@ ru:
         create: "%{shortcut} Создать тему"
         notifications: "%{shortcut} Открыть уведомления"
         hamburger_menu: "%{shortcut} Открыть меню"
-        user_profile_menu: "%{shortcut} Открыть меню профиля"
+        user_profile_menu: "%{shortcut} Открыть меню пользователя"
         show_incoming_updated_topics: "%{shortcut} Показать обновлённые темы"
         search: "%{shortcut} Поиск"
         help: "%{shortcut} Показать эту справку"
