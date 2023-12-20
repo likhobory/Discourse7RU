@@ -341,6 +341,9 @@ ru:
         yesterday: Вчера
       members_view:
         filter_placeholder: Найти участников
+        add_member: Добавить участника
+        back_to_settings: "Назад к настройкам"
+
       about_view:
         associated_topic: Связанная тема
         associated_category: Связанный раздел

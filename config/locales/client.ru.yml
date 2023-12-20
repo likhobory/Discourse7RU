@@ -2324,6 +2324,9 @@ ru:
     date_time_picker:
       from: От
       to: До
+    file_size_input:
+      error:
+        size_too_large: "Значение %{provided_file_size} превышает максимально разрешённое: %{max_file_size}"
     emoji_picker:
       filter_placeholder: Поиск эмодзи
       smileys_&_emotion: Смайлики и эмоции
@@ -2612,7 +2615,7 @@ ru:
       reaction_2: "<span>%{username}, %{username2}</span> %{description}"
       votes_released: "%{description} — завершено"
       new_features: "Появились новые функции!"
-      admin_problems: "Новые советы в панели администратора"
+      admin_problems: "Новый совет в панели администратора"
       dismiss_confirmation:
         body:
           default:
@@ -2677,6 +2680,7 @@ ru:
         reaction: "Новая реакция"
         votes_released: "Голосование опубликовано"
         new_features: "В Discourse появился новый функционал!"
+        admin_problems: "Новые советы в панели администратора"
     upload_selector:
       uploading: "Загрузка"
       processing: "Обработка загружаемого контента"
@@ -4784,6 +4788,7 @@ ru:
     admin:
       title: "Администратор Discourse"
       moderator: "Модератор"
+      back_to_forum: "Назад на форум"
       tags:
         remove_muted_tags_from_latest:
           always: "Всегда"
@@ -4974,6 +4979,7 @@ ru:
         user: "Пользователь"
         title: "API"
         key: "Ключ"
+        keys: "Ключи"
         created: Создан
         updated: Обновлён
         last_used: Последнее использование
@@ -5078,6 +5084,8 @@ ru:
               commenting: Необходимо для функций комментирования плагина WP Discourse.
               discourse_connect: Необходимо для функций DiscourseConnect плагина WP Discourse.
               utilities: Необходимо, если вы используете утилиты плагина WP Discourse.
+            logs:
+              messages: Вывод списка сообщений из /logs или получение конкретного сообщения журнала.
       web_hooks:
         title: "Вебхуки"
         none: "Вебхуки отсутствуют."
@@ -5590,6 +5598,7 @@ ru:
         title: "Письма"
         settings: "Настройки"
         templates: "Шаблоны"
+        templates_title: "Шаблоны электронных писем"
         preview_digest: "Предпросмотр сводки"
         advanced_test:
           title: "Расширенный тест"
