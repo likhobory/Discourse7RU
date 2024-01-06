@@ -62,6 +62,10 @@ ru:
   inline_oneboxer:
     topic_page_title_post_number: "#%{post_number}"
     topic_page_title_post_number_by_user: "#%{post_number} от пользователя %{username}"
+  components:
+    enabled_filter: "Включённые"
+    disabled_filter: "Отключённые"
+    updates_available_filter: "Доступны обновления"
   themes:
     bad_color_scheme: "Не удаётся обновить тему, недопустимая цветовая палитра"
     other_error: "При обновлении темы оформления что-то пошло не так"
@@ -304,6 +308,7 @@ ru:
       discourse_connect_enabled: "Возможность использования приглашений отключена, поскольку включена технология единого входа DiscourseConnect."
       invalid_access: "У вас нет прав для просмотра запрашиваемого ресурса."
     requires_groups: "Приглашение не сохранено, потому что указанная тема недоступна. Добавьте одну из следующих групп: %{groups}."
+    max_invite_emails_limit_exceeded: "Запрос не выполнен, поскольку количество писем превысило максимальное значение (%{max})."
     domain_not_allowed: "Ваш адрес электронной почты не может быть использован для активации этого приглашения."
     max_redemptions_allowed_one: "Для приглашений по электронной почте значение должно быть равно '1'."
     redemption_count_less_than_max: "Значение должно быть меньше %{max_redemptions_allowed}."
@@ -1946,6 +1951,7 @@ ru:
     min_trust_to_edit_post: "Минимальный уровень доверия, требуемый для редактирования сообщений."
     edit_post_allowed_groups: "Группы, которым разрешено редактировать сообщения."
     min_trust_to_allow_self_wiki: "Минимальный уровень доверия, требуемый для создания вики-сообщения."
+    self_wiki_allowed_groups: "Группы, в которых пользователи могут создавать собственные вики-сообщения."
     min_trust_to_send_messages: "УСТАРЕЛО: вместо этого параметра используйте параметр «personal message enabled groups». Минимальный уровень доверия, необходимый для создания личных сообщений."
     min_trust_to_send_email_messages: "Минимальный уровень доверия, необходимый для отправки личных сообщений по электронной почте."
     min_trust_to_flag_posts: "Минимальный уровень доверия, необходимый для создания жалобы на сообщение."
@@ -1991,9 +1997,9 @@ ru:
     dark_mode_none: "Нет"
     max_image_size_kb: "Максимальный размер загружаемого изображения. Этот параметр должен также быть настроен в nginx (client_max_body_size), apache или прокси. Размер изображений, превышающий указанное значение «client_max_body_size», будет изменён при загрузке."
     max_attachment_size_kb: "Максимальный размер загружаемых файлов. Этот параметр должен также быть настроен в nginx (client_max_body_size), apache или прокси."
-    authorized_extensions: "Список расширений файлов, разрешённых к загрузке. Символ «*» разрешает загрузку любых типов файлов."
-    authorized_extensions_for_staff: "Список расширений файлов, разрешенных для загрузки сотрудникам, в дополнение к списку, определённому в настройке `authorized_extensions`. Символ «*» разрешает загрузку любых типов файлов."
-    theme_authorized_extensions: "Список расширений файлов, разрешённых для загрузки тем оформления. Укажите символ «*» для загрузки любых типов файлов."
+    authorized_extensions: "Список расширений файлов, разрешённых к загрузке."
+    authorized_extensions_for_staff: "Список расширений файлов, разрешенных для загрузки сотрудникам, в дополнение к списку, определённому в настройке `authorized_extensions`."
+    theme_authorized_extensions: "Список расширений файлов, разрешённых для загрузки тем оформления."
     max_similar_results: "Количество похожих тем, показываемых пользователю во время создания новой темы. Сравнение выполняется на основании названия и текста темы."
     max_image_megapixels: "Максимально допустимое количество мегапикселей в изображении. Изображения с большим количеством мегапикселей будут отклонены."
     title_prettify: "Предотвращать распространённые опечатки и ошибки в названии тем, включая набор в верхнем регистре, использование строчного символа в начале названия, множественные знаки «!» и «?», лишние точки в конце предложения и т. д."
@@ -2300,6 +2306,7 @@ ru:
 
     tagging_enabled: "Включить теги для тем?"
     min_trust_to_create_tag: "Минимальный уровень доверия для создания тега."
+    create_tag_allowed_groups: "Группы, которым разрешено создавать теги."
     max_tags_per_topic: "Максимальное количество тегов, которое может быть применено к теме."
     enable_max_tags_per_email_subject: "Учитывать параметр `max_tags_per_email_subject` при создании темы письма"
     max_tags_per_email_subject: "Максимальное количество тегов, которое может быть в теме письма"
@@ -2354,7 +2361,6 @@ ru:
     experimental_new_new_view_groups: 'ЭКСПЕРИМЕНТАЛЬНО: Включить новый список тем, который объединяет непрочитанные и новые темы, и сделать  на него ссылку «Все» на боковой панели.'
     enable_custom_sidebar_sections: "ЭКСПЕРИМЕНТАЛЬНО: Включить настраиваемые разделы на боковой панели"
     experimental_topics_filter: "ЭКСПЕРИМЕНТАЛЬНО: Включить экспериментальный маршрут фильтрации тем по ссылке /filter"
-    experimental_search_menu_groups: "ЭКСПЕРИМЕНТАЛЬНО: Включить новое меню поиска, использующее мерцание"
     enable_experimental_lightbox: "ЭКСПЕРИМЕНТАЛЬНО: Заменить стандартный лайтбокс изображений на лайтбокс с обновлённым дизайном."
     experimental_form_templates: "ЭКСПЕРИМЕНТАЛЬНО: Включить шаблоны форм. <b>После включения</b> управляйте шаблонами в разделе <a href='%{base_path}/admin/customize/form-templates'>Оформление / Шаблоны</a>."
     enable_admin_sidebar_navigation: "ЭКСПЕРИМЕНТАЛЬНО: Включить навигацию на боковой панели для интерфейса администратора, заменяющую кнопки в верхней части панели администратора."
@@ -2424,7 +2430,7 @@ ru:
       approve_unless_allowed_groups: "approve_unless_trust_level"
       approve_new_topics_unless_allowed_groups: "approve_new_topics_unless_trust_level"
       email_in_allowed_groups: "email_in_min_trust"
-      edit_wiki_post_allowed_groups: "minmin_trust_to_edit_wiki_post"
+      edit_wiki_post_allowed_groups: "min_trust_to_edit_wiki_post"
       uploaded_avatars_allowed_groups: "allow_uploaded_avatars"
       create_topic_allowed_groups: "min_trust_to_create_topic"
       edit_post_allowed_groups: "min_trust_to_edit_post"
@@ -2433,6 +2439,8 @@ ru:
       user_card_background_allowed_groups: "min_trust_level_to_allow_user_card_background"
       invite_allowed_groups: "min_trust_level_to_allow_invite"
       ignore_allowed_groups: "min_trust_level_to_allow_ignore"
+      self_wiki_allowed_groups: "min_trust_to_allow_self_wiki"
+      create_tag_allowed_groups: "min_trust_to_create_tag"
     placeholder:
       discourse_connect_provider_secrets:
         key: "www.example.com"

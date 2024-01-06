@@ -40,6 +40,7 @@ ru:
     chat:
       text_copied: Текст скопирован в буфер обмена
       link_copied: Ссылка скопирована в буфер обмена
+      back_to_forum: "Форум"
       deleted_chat_username: deleted
       dates:
         time_tiny: "h:mm"

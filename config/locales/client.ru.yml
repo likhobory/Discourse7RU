@@ -203,6 +203,7 @@ ru:
       url: "Копировать ссылку и поделиться"
     word_connector:
       comma: ", "
+      last_item: "и"
     action_codes:
       public_topic: "Сделал(а) тему публичной %{when}"
       open_topic: "Преобразовал(а) это в тему %{when}"
@@ -255,6 +256,10 @@ ru:
     broken_decorator_alert: "Сообщения могут отображаться неправильно: один из декораторов содержимого сообщений вызвал ошибку."
     broken_page_change_alert: "Обработчик onPageChange вызвал ошибку. Дополнительную информацию можно найти в инструментах разработчика браузера."
     broken_plugin_alert: "Ошибка из-за плагина '%{name}'"
+    critical_deprecation:
+      notice: "<b>[Уведомление администратора]</b> Одну из ваших тем или плагинов необходимо обновить для совместимости с предстоящими ключевыми изменениями в Discourse (<a target='_blank' href='https://meta.discourse.org/t/287211'>more info</a>)."
+      theme_source: "Обнаруженная тема: <a target='_blank' href='%{path}'>'%{name}'</a>."
+      plugin_source: "Обнаруженный плагин: '%{name}'"
     s3:
       regions:
         ap_northeast_1: "Азиатско-Тихоокеанский регион (Токио)"
@@ -1129,6 +1134,7 @@ ru:
       said: "%{username}:"
       profile: "Профиль"
       profile_possessive: "Профиль пользователя %{username}"
+      account_possessive: " - учётная запись"
       mute: "Отключить"
       edit: "Настройки"
       download_archive:
@@ -4535,8 +4541,7 @@ ru:
     second_factor_auth:
       redirect_after_success: "Двухфакторная аутентификация выполнена. Перенаправление на предыдущую страницу…"
     sidebar:
-      show_sidebar: "Показать боковую панель"
-      hide_sidebar: "Скрыть боковую панель"
+      title: "Боковая панель"
       unread_count:
         one: "%{count} непрочитанная"
         few: "%{count} непрочитанные"
@@ -5336,11 +5341,19 @@ ru:
           body: "Текст сообщения"
           revert: "Отменить изменения"
           revert_confirm: "Вы действительно хотите отменить внесённые изменения?"
+        component:
+          all_filter: "Все"
+          used_filter: "Используемые"
+          unused_filter: "Неиспользуемые"
+          enabled_filter: "Включённые"
+          disabled_filter: "Отключённые"
+          updates_available_filter: "Доступны обновления"
         theme:
+          filter_by: "Фильтр"
           theme: "Тема"
           component: "Компонент"
           components: "Компоненты"
-          filter_placeholder: "Фильтрация настроек…"
+          search_placeholder: "Фильтрация настроек…"
           theme_name: "Название темы"
           component_name: "Название компонента"
           themes_intro: "Для начала выберите существующую тему или установите новую"
@@ -5377,6 +5390,7 @@ ru:
           color_scheme_user_selectable: "Цветовая схема может быть выбрана пользователем"
           auto_update: "Автообновление при обновлении Discourse"
           color_scheme: "Цветовая палитра"
+          edit_color_scheme: "Изменить цветовую палитру"
           default_light_scheme: "Light (используется по умолчанию)"
           color_scheme_select: "Выберите цвета темы"
           custom_sections: "Настройка секций:"
@@ -5515,6 +5529,10 @@ ru:
             title: "Определить настройки темы в формате YAML"
           scss_color_variables_warning: 'Использование в темах цветовых переменных SCSS является устаревшим. Вместо этого используйте пользовательские свойства CSS. См. <a href="https://meta.discourse.org/t/-/77551#color-variables-2" target="_blank">это руководство</a> для получения более подробной информации.'
           scss_warning_inline: "Использование в темах цветовых переменных SCSS является устаревшим."
+          all_filter: "Все"
+          active_filter: "Активные"
+          inactive_filter: "Неавктивные"
+          updates_available_filter: "Доступны обновления"
         colors:
           select_base:
             title: "Выберите базовую цветовую палитру"
@@ -5668,6 +5686,9 @@ ru:
             type_placeholder: "дайджест, подписка…"
             reply_key_placeholder: "Ключ ответа"
             smtp_transaction_response_placeholder: "SMTP ID"
+          email_addresses:
+            see_more: "[Ещё...]"
+          post_id: "(ID сообщения: %{post_id})"
       moderation_history:
         performed_by: "Выполнено пользователем "
         no_results: "История модерации недоступна."
@@ -6424,6 +6445,13 @@ ru:
         json_schema:
           edit: Открыть редактор
           modal_title: "Редактировать %{name}"
+        file_types_list:
+          add_image_types: "Изображения"
+          add_video_types: "Видео"
+          add_audio_types: "Аудио"
+          add_document_types: "Докумеенты"
+          add_types_title: "Разрешённые типы файлов: %{types}"
+          add_types_toast: "Добавлены следующие типы файлов :%{types}"
       badges:
         title: Награды
         new_badge: Новая награда
