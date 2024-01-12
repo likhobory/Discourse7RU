@@ -345,7 +345,7 @@ ru:
     related_messages:
       title: "Связанные сообщения"
       pill: "Связанные сообщения"
-      see_all: 'Показать <a href="%{path}">все сообщения</a> от @%{username}…'
+      see_all: 'Показать <a href="%{path}">все сообщения</a> от пользователя @%{username}…'
     suggested_topics:
       title: "Новые и непрочитанные темы"
       pill: "Похожие"
@@ -672,7 +672,7 @@ ru:
       context_question:
         is_this_post: "Это сообщение — %{reviewable_human_score_types}?"
         delimiter: "или"
-        something_else_wrong: "Что-то не так с этим сообщением?"
+        something_else_wrong: "Что-то не так с сообщением %{reviewable_type}?"
       types:
         reviewable_flagged_post:
           title: "На это сообщение поступила жалоба"
@@ -1134,7 +1134,7 @@ ru:
       said: "%{username}:"
       profile: "Профиль"
       profile_possessive: "Профиль пользователя %{username}"
-      account_possessive: " - учётная запись"
+      account_possessive: "— аккаунт пользователя"
       mute: "Отключить"
       edit: "Настройки"
       download_archive:
@@ -3489,6 +3489,8 @@ ru:
       quote_reply_shortcut: "Ответить с цитированием (или нажмите q)"
       quote_edit: "Изменить"
       quote_edit_shortcut: "Изменить (или нажмите e)"
+      quote_copy: "Копировать цитату"
+      quote_copied_to_clibboard: "Цитата скопирована в буфер обмена"
       quote_share: "Поделиться"
       edit_reason: "Причина: "
       post_number: "сообщение %{number}"
@@ -3652,7 +3654,7 @@ ru:
         delete_topic_confirm_modal_no: "Нет, оставить эту тему"
         delete_topic_error: "Произошла ошибка при удалении темы"
         delete_topic: "Удалить тему"
-        add_post_notice: "Сообщение от модератора…"
+        add_post_notice: "Добавить сообщение от модератора…"
         change_post_notice: "Изменить сообщение модератора…"
         delete_post_notice: "Удалить сообщение модератора"
         remove_timer: "Удалить таймер"
@@ -3981,7 +3983,7 @@ ru:
       title: "Сводка по теме"
       participants_title: "Частые авторы"
       links_title: "Популярные ссылки"
-      links_shown: "Показать все ссылки…"
+      links_shown: "Показать больше ссылок…"
       clicks:
         one: "%{count} клик"
         few: "%{count} клика"
@@ -4801,7 +4803,7 @@ ru:
           never: "Никогда"
       reports:
         title: "Список доступных отчётов"
-        meta_doc: "Изучите нашу <a href='https://meta.discourse.org/t/-/240233' rel='noopener noreferrer' target='_blank'>документацию</a> для получения подробной информации об отчётах."
+        meta_doc: "Ознакомьтесь с нашей <a href='https://meta.discourse.org/t/-/240233' rel='noopener noreferrer' target='_blank'>документацией</a> для получения подробной информации об отчётах."
       dashboard:
         title: "Панель управления"
         last_updated: "Панель управления обновлена:"
@@ -5470,7 +5472,7 @@ ru:
             maximum: "Требуется версия Discourse %{version} или ниже."
           update_to_latest: "Обновить"
           check_for_updates: "Проверить обновления"
-          updating: "Обновляемся…"
+          updating: "Обновление…"
           up_to_date: "Установлена актуальная версия темы, последняя проверка:"
           has_overwritten_history: "Текущая версия темы больше не существует, поскольку история Git-репозитория была принудительно перезаписана."
           add: "Добавить"
@@ -5675,7 +5677,7 @@ ru:
             from_placeholder: "from@example.com"
             to_placeholder: "to@example.com"
             cc_placeholder: "cc@example.com"
-            subject_placeholder: "Заголовок…"
+            subject_placeholder: "Тема письма…"
             error_placeholder: "Ошибка"
         logs:
           none: "Записи в журнале не найдены."
@@ -5687,7 +5689,7 @@ ru:
             reply_key_placeholder: "Ключ ответа"
             smtp_transaction_response_placeholder: "SMTP ID"
           email_addresses:
-            see_more: "[Ещё...]"
+            see_more: "[Ещё адреса…]"
           post_id: "(ID сообщения: %{post_id})"
       moderation_history:
         performed_by: "Выполнено пользователем "
@@ -6437,7 +6439,7 @@ ru:
         secret_list:
           invalid_input: "Поля ввода не могут быть пустыми или содержать символ вертикальной черты."
         default_categories:
-          modal_description: "Хотели бы вы применить это изменение к уже настроенным процессам? Это изменит настройки для %{count} существующих пользователей."
+          modal_description: "Применить это изменение к уже существующим пользователям? Это изменит настройки для существующих пользователей (%{count})."
           modal_yes: "Да"
           modal_no: "Нет, применять изменения только в будущем"
         simple_list:
@@ -6449,9 +6451,9 @@ ru:
           add_image_types: "Изображения"
           add_video_types: "Видео"
           add_audio_types: "Аудио"
-          add_document_types: "Докумеенты"
+          add_document_types: "Документы"
           add_types_title: "Разрешённые типы файлов: %{types}"
-          add_types_toast: "Добавлены следующие типы файлов :%{types}"
+          add_types_toast: "Добавлены следующие типы файлов: %{types}"
       badges:
         title: Награды
         new_badge: Новая награда

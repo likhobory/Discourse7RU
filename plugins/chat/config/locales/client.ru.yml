@@ -6,11 +6,14 @@
 # @author likhobory <likhobory@mail.ru>
 
 ru:
-  js:
+  admin_js:
     admin:
       site_settings:
         categories:
           chat: Чат
+  js:
+    admin:
+      site_settings:
         chat_separate_sidebar_mode:
           always: "Всегда"
           fullscreen: "Когда чат отображается в полноэкранном режиме"
