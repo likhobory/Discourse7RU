@@ -1772,6 +1772,7 @@ ru:
     log_out_strict: "Когда пользователь выходит из системы, закрывать все сессии на всех устройствах пользователя."
     version_checks: "Проверять обновления на Discourse Hub и отображать сообщения о новых версиях в <a href='%{base_path}/admin' target='_blank'>панели</a> администратора"
     new_version_emails: "Отправлять сообщение на адрес «contact_email», когда будут доступны новые версии Discourse."
+    include_in_discourse_discover: "Позвольте CDCK, Inc. («Discourse») представлять это сообщество на странице <a href='https://www.discourse.org/discover'>Discover</a> и в маркетинговых материалах Discourse. В этом случае вы будете делиться с Discourse метаданными сообщества и анонимной статистикой. Обратите внимание, что продвижение сообществ осуществляется по усмотрению Discourse"
     invite_expiry_days: "Количество дней, в течение которых высланные приглашённому пользователю ключи являются действительными."
     invite_only: "Все новые пользователи должны явно приглашаться доверенными пользователями или сотрудниками. Публичная регистрация отключена."
     login_required: "Требовать авторизации для доступа к сайту. Анонимный доступ запрещён."
@@ -1958,6 +1959,7 @@ ru:
     min_trust_to_flag_posts: "Минимальный уровень доверия, необходимый для создания жалобы на сообщение."
     flag_post_allowed_groups: "Группы, которым разрешено жаловаться на сообщения."
     min_trust_to_post_links: "Минимальный уровень доверия, необходимый для включения ссылок в сообщения"
+    post_links_allowed_groups: "Группы, которым разрешено включать ссылки в сообщения."
     min_trust_to_post_embedded_media: "Минимальный уровень доверия, необходимый для встраивания медиафайлов в сообщение"
     min_trust_level_to_allow_profile_background: "Минимальный уровень доверия, необходимый для загрузки шапки профиля"
     min_trust_level_to_allow_user_card_background: "Минимальный уровень доверия, необходимый для загрузки фона карточки пользователя"
@@ -2302,6 +2304,9 @@ ru:
     min_trust_level_for_user_api_key: |
       Уровень доверия, необходимый для создания API-ключей пользователя.<br>
       <b>ВНИМАНИЕ</b>: Изменение уровня доверия не позволит пользователям с более низким уровнем доверия входить в систему через Discourse Hub.
+    user_api_key_allowed_groups: |
+      Для создания API-ключей пользователя необходимо состоять в группе<br>
+      <b>ВНИМАНИЕ</b>: Изменение уровня доверия не позволит пользователям с более низким уровнем доверия входить в систему через Discourse Hub
     allowed_user_api_auth_redirects: "Разрешённый URL для перенаправления аутентификации для API-ключей пользователя. Подстановочный знак * может использоваться для соответствия любой его части (например, www.example.com/*)."
     allowed_user_api_push_urls: "Разрешённые URL-адреса для отправки на сервер к пользовательскому API"
     revoke_user_api_keys_unused_days: "Количество дней с момента последнего использования API-ключа пользователя и до его автоматического отзыва (0 — никогда)"
@@ -2446,6 +2451,8 @@ ru:
       create_tag_allowed_groups: "min_trust_to_create_tag"
       send_email_messages_allowed_groups: "min_trust_to_send_email_messages"
       skip_review_media_groups: "review_media_unless_trust_level"
+      post_links_allowed_groups: "min_trust_to_post_links"
+      user_api_key_allowed_groups: "min_trust_level_for_user_api_key"
     placeholder:
       discourse_connect_provider_secrets:
         key: "www.example.com"
@@ -4250,7 +4257,7 @@ ru:
 
       ## [Создано вами](#power)
 
-      Этот форум обслуживается как нашим [дружелюбным персоналом](%{base_path}/about), так и *вами* — нашим сообществом. Если у вас есть вопросы по работе форума — откройте новую тему в разделе [отзывов по сайту](%{base_path}/c/site-feedback), и мы обсудим их! Если у вас срочная проблема, которая не является жалобой или не может быть рассмотрена публично — свяжитесь с нами через [страницу персонала](%{base_path}/about).
+      Этот форум обслуживается как нашим [дружелюбным персоналом](%{base_path}/about), так и *вами* — нашим сообществом. Если у вас есть вопросы по работе форума — откройте новую тему в разделе %{feedback_category}, и мы обсудим их! Если у вас срочная проблема, которая не является жалобой или не может быть рассмотрена публично — свяжитесь с нами через [страницу персонала](%{base_path}/about).
 
       <a name="tos"></a>
 
@@ -4960,6 +4967,22 @@ ru:
   onebox:
     discourse:
       user_joined_community: "Регистрация: %{date}"
+    gitlab:
+      truncated_file: "Файл был обрезан."
+      show_original: "Показать оригинал"
+    github:
+      binary_file: "Бинарный файл."
+      truncated_file: "Файл был обрезан."
+      show_original: "Показать оригинал"
+      requires_iframe: "Для просмотра требуется iframe."
+      committed: "зафиксирован"
+      more_than_three_files: "Существует более трёх файлов."
+      opened: "открыт"
+      closed: "закрыт"
+      commit_by: "Автор коммита"
+      comment_by: "Автор комментария"
+      review_by: "Проверено"
+      pr_summary: "Коммитов: %{commits}, изменено файлов: %{changed_files} (добавлений: %{additions} и удалений: %{deletions})"
   discourse_push_notifications:
     popup:
       mentioned: '%{username} упомянул(а) вас в теме «%{topic}» —%{site_title}'

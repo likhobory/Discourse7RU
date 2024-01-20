@@ -131,6 +131,7 @@ ru:
         title: "Показать индикатор активности в заголовке"
         all_new: "Все новые сообщения"
         dm_and_mentions: "Прямые сообщения и упоминания"
+        only_mentions: "Только упоминания"
         never: "Никогда"
       separate_sidebar_mode:
         title: "Показывать отдельные боковые панели для форума и чата"
@@ -255,6 +256,7 @@ ru:
         header: "Заголовок чата"
         composer: "Редактор чата"
         channels_list: "Список каналов чата"
+      no_direct_message_channels: "Вы не подписаны ни на один личный чат."
       no_public_channels: "Вы не подписаны ни на один канал."
       kicked_from_channel: "Вы больше не имеете доступа к этому каналу."
       only_chat_push_notifications:
@@ -377,6 +379,7 @@ ru:
         filter: "Фильтр"
         cant_add_more_members: "Достигнуто максимальное количество участников"
         create_new_group_chat: "Создание группового чата"
+        group_with_too_many_members: "содержит слишком много участников (%{membersCount})"
 
       channel_edit_name_slug_modal:
         title: Изменить канал
@@ -551,14 +554,19 @@ ru:
           export_has_started: "Экспорт начался. Когда он завершится, вы получите личное сообщение."
       my_threads:
         title: Мои ветки
+        aria_label: "Перейти к моему списку веток"
 
       direct_messages:
         title: "Личный чат"
+        aria_label: "Перейти в личный чат"
         new: "Создать личный чат"
         create: "Создать"
         leave: "Выйти из личного чата"
         close: "Закрыть личный чат"
         cannot_create: "Вы не можете отправлять прямые сообщения."
+      channel_list:
+        title: "Каналы"
+        aria_label: "Перейти к списку каналов"
       incoming_webhooks:
         back: "Назад"
         channel_placeholder: "Выберите канал"

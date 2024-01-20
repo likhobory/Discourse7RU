@@ -359,9 +359,9 @@ ru:
       moderators: "Модераторы"
       stat:
         all_time: "За всё время"
-        last_day: "24 часа"
-        last_7_days: "7 дней"
-        last_30_days: "30 дней"
+        last_day: "За 24 часа"
+        last_7_days: "За 7 дней"
+        last_30_days: "За 30 дней"
       like_count: "Симпатии"
       topic_count: "Темы"
       post_count: "Сообщения"
@@ -414,7 +414,7 @@ ru:
       copied: "Скопировано!"
       copy: "Скопировать код в буфер обмена"
       fullscreen: "Показать код в полноэкранном режиме"
-      view_code: "Просмотр кода"
+      view_code: "Просмотреть код"
     drafts:
       label: "Черновики"
       label_with_count: "Черновики (%{count})"
@@ -524,7 +524,7 @@ ru:
         feedback: "Отзыв"
         custom_reason: "Опишите причину, по которой необходимо пересмотреть содержание сообщения"
         other_reason: "Другое..."
-        optional: "необязятельно"
+        optional: "необязательно"
       stale_help: "Проверка сообщения уже была выполнена пользователем <b>%{username}</b>."
       claim_help:
         optional: "Вы можете зарезервировать этот контент за собой, чтобы другие не могли заняться его модерацией."
@@ -677,16 +677,19 @@ ru:
         reviewable_flagged_post:
           title: "На это сообщение поступила жалоба"
           flagged_by: "Кто пожаловался"
+          noun: "сообщение"
         reviewable_queued_topic:
           title: "Тема на премодерации"
+          noun: "тема"
         reviewable_queued_post:
           title: "Сообщение на премодерации"
+          noun: "сообщение"
         reviewable_user:
           title: "Пользователь"
+          noun: "пользователь"
         reviewable_post:
           title: "Сообщение"
-        reviewable_chat_message:
-          title: "Сообщение чата, на которое поступила жалоба"
+          noun: "сообщение"
       approval:
         title: "Модерируемые сообщения"
         description: "Ваше сообщение получено, но требует проверки и утверждения модератором перед публикацией. Пожалуйста, будьте терпеливы."
@@ -1873,7 +1876,7 @@ ru:
           error: "Файл должен быть в формате CSV."
       confirm_access:
         title: "Подтверждение доступа"
-        incorrect_password: "Введённый пароль неверен."
+        incorrect_password: "Введён неправильный пароль."
         incorrect_passkey: "Указанный ключ доступа неверен."
         logged_in_as: "Вы вошли на форум как: "
         instructions: "Для завершения действия подтвердите свою личность."
@@ -1888,7 +1891,7 @@ ru:
         instructions: "Минимальное количество символов: %{count}"
         required: "Пожалуйста, введите пароль"
         confirm: "Подтвердить"
-        incorrect_password: "Введенный пароль неверен."
+        incorrect_password: "Введен неправильный пароль."
       summary:
         title: "Сводка"
         stats: "Статистика"
@@ -2139,7 +2142,7 @@ ru:
       title: "Создать аккаунт"
       failed: "Произошла ошибка. Возможно, эта электронная почта уже используется. Попробуйте восстановить пароль"
       associate: "Уже есть аккаунт? <a href='%{associate_link}'>Войдите в систему</a> для привязки аккаунта %{provider}."
-      activation_title: "Активируйте ваш Аккаунт"
+      activation_title: "Активируйте свой аккаунт"
     forgot_password:
       title: "Сброс пароля"
       action: "Пароль утерян"
@@ -2204,7 +2207,7 @@ ru:
       logging_in: "Вход…"
       previous_sign_up: "Уже есть аккаунт?"
       or: "или"
-      authenticating: "Проверка…"
+      authenticating: "Аутентификация…"
       awaiting_activation: "Аккаунт ожидает активации через ссылку, указанную в отправленном письме. Чтобы повторно выслать активационное письмо, используйте кнопку сброса пароля."
       awaiting_approval: "Аккаунт ещё не одобрен персоналом. Мы вышлем вам письмо, как только это произойдёт."
       requires_invite: "Попасть в этот форум можно только по приглашениям."
@@ -2980,6 +2983,7 @@ ru:
         bookmarks: "У вас пока нет тем, добавленных в закладки."
         category: "В разделе «%{category}» отсутствуют темы."
         top: "Нет обсуждаемых тем."
+        hot: "Нет горячих тем."
         filter: "Тем нет."
         educate:
           new: '<p>Здесь появятся ваши новые темы. По умолчанию темы считаются новыми и обозначаются индикатором <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;"></span>, если были созданы за последние 2 дня.</p><p>Изменить этот период можно в <a href="%{userPrefsUrl}">настройках</a> профиля пользователя.</p>'
@@ -2995,6 +2999,7 @@ ru:
         category: "В разделе %{category} больше нет тем."
         tag: "Нет больше тем, помеченных тегом %{tag}."
         top: "Обсуждаемых тем больше нет."
+        hot: "Горячих тем больше нет."
         bookmarks: "Тем, помеченных закладками, больше нет."
         filter: "Тем больше нет."
     topic:
@@ -4111,6 +4116,10 @@ ru:
         title: "Непросмотренные"
         lower_title: "непросмотренные"
         help: "Новые темы, а также наблюдаемые или отслеживаемые темы с непрочитанными сообщениями"
+      hot:
+        title: "Горячие"
+        lower_title: "горячие"
+        help: "Недавно обсуждаемые темы"
       new:
         lower_title_with_count:
           one: "%{count} новая"
@@ -5129,7 +5138,7 @@ ru:
         topic_event:
           group_name: "События темы"
           topic_created: "Тема создана"
-          topic_revised: "Тема пересмотрена"
+          topic_revised: "Тема проверена"
           topic_edited: "Тема обновлена"
           topic_destroyed: "Тема удалена"
           topic_recovered: "Тема восстановлена"
@@ -5152,13 +5161,13 @@ ru:
         category_event:
           group_name: "События раздела"
           category_created: "Раздел создан"
-          category_updated: "Category обновлён"
-          category_destroyed: "Category удалён"
+          category_updated: "Раздел обновлён"
+          category_destroyed: "Раздел удалён"
         user_event:
           group_name: "События пользователя"
           user_logged_in: "Пользователь вошёл в систему"
           user_logged_out: "Пользователь вышел из системы"
-          user_confirmed_email: "Пользователь confirmed e-mail"
+          user_confirmed_email: "Пользователь подтвердил адрес электронной почты"
           user_created: "Пользователь создан"
           user_approved: "Пользователь одобрен"
           user_updated: "Пользователь обновлён"
@@ -5231,8 +5240,8 @@ ru:
         official: "Официальный плагин Discourse"
         broken_route: "Не удаётся настроить ссылку на «%{name}». Отключите блокировщики рекламы и попробуйте перезагрузить страницу."
         author: "Автор: %{author}"
-        experimental_badge: "Экспериментальная"
-        learn_more: "Узнать больше"
+        experimental_badge: "экспериментальный"
+        learn_more: "Подробнее"
       navigation_menu:
         sidebar: "Боковая панель"
         header_dropdown: "Выпадающий список заголовков"
