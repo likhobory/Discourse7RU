@@ -16,6 +16,8 @@ ru:
         molecules: Молекулы
         organisms: Организмы
       sections:
+        bem:
+          title: "BEM"
         typography:
           title: "Типографика"
           example: "Добро пожаловать в Discourse"
@@ -25,7 +27,7 @@ ru:
         menus:
           title: "Меню"
         toasts:
-          title: "Поля ввода Даты/Времени"
+          title: "Сообщения-подсказки"
         font_scale:
           title: "Шрифты"
         colors:

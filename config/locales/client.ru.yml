@@ -1137,7 +1137,7 @@ ru:
       said: "%{username}:"
       profile: "Профиль"
       profile_possessive: "Профиль пользователя %{username}"
-      account_possessive: "— аккаунт пользователя"
+      account_possessive: "Аккаунт пользователя %{name}"
       mute: "Отключить"
       edit: "Настройки"
       download_archive:
@@ -2326,8 +2326,7 @@ ru:
         many: "Выберите хотя бы %{count} элементов."
         other: "Выберите хотя бы %{count} элементов."
       components:
-        tag_drop:
-          filter_for_more: Больше тегов…
+        filter_for_more: Больше тегов…
         categories_admin_dropdown:
           title: "Управление разделами"
     date_time_picker:

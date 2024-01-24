@@ -7,7 +7,7 @@
 
 ru:
   site_settings:
-    chat_separate_sidebar_mode: "Показывать отдельные боковые панели для форума и чата."
+    chat_separate_sidebar_mode: "Показывать отдельные режимы боковой панели для форума и чата."
     chat_enabled: "Включить чат."
     enable_public_channels: "Включить публичные каналы на основе разделов."
     chat_allowed_groups: "Пользователи в этих группах могут общаться в чате. Обратите внимание, что сотрудники всегда могут получить доступ к чату."
@@ -146,10 +146,10 @@ ru:
         transcript_body: "Чтобы дать больше контекста, мы отображаем содержимое предыдущих сообщений этой беседы (до десяти):\n\n%{transcript}"
     channel:
       users_invited_to_channel:
-        one: "%{invited_users} пользователь был приглашён пользователем %{inviting_user}."
-        few: "%{invited_users} пользователя были приглашены пользователем %{inviting_user}."
-        many: "%{invited_users} пользователей были приглашены пользователем %{inviting_user}."
-        other: "%{invited_users} пользователей были приглашены пользователем %{inviting_user}."
+        one: "Пользователь %{inviting_user} пригласил: %{invited_users}"
+        few: "Пользователь %{inviting_user} пригласил: %{invited_users}"
+        many: "Пользователь %{inviting_user} пригласил: %{invited_users}"
+        other: "Пользователь %{inviting_user} пригласил: %{invited_users}"
       archive:
         first_post_raw: "Эта тема является архивом канала [%{channel_name}](%{channel_url})."
       messages_moved:
@@ -176,8 +176,8 @@ ru:
         invitations_sent:
           one: "Приглашение отправлено"
           few: "Приглашения отправлены"
-          many: "Приглашений отправлены"
-          other: "Приглашений отправлены"
+        many: "Приглашения отправлены"
+        other: "Приглашения отправлены"
         invite: "Пригласить в канал"
         without_membership: "Пользователь %{first_identifier} не подписан на этот канал."
         without_membership_multiple:
@@ -210,6 +210,7 @@ ru:
       inline_to_message: "Сообщение №%{message_id} от пользователя %{username} — №%{chat_channel}"
       inline_to_channel: "Чат №%{chat_channel}"
       inline_to_topic_channel: "Чат по теме %{topic_title}"
+      thread_title_connector: "в"
       x_members:
         one: "%{count} участник"
         few: "%{count} участника"
