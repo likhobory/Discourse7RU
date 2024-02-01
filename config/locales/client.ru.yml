@@ -1610,6 +1610,18 @@ ru:
         success_via_admin: "На указанный адрес электронной почты отправлено письмо. Для подтверждения адреса пользователь должен следовать инструкциям в письме."
         success_staff: "На текущий адрес электронной почты отправлено письмо. Следуйте инструкциям по подтверждению в письме."
         back_to_preferences: "Назад к настройкам"
+        confirm_success: "Your email has been updated."
+        confirm: "Confirm"
+        authorizing_new:
+          description: "Подтвердите изменение адреса электронной почты на новый:"
+          description_add: "Подтвердите добавление дополнительного адреса электронной почты:"
+        authorizing_old:
+          title: "Подтвердить существующий адрес электронной почты"
+          description: "Пожалуйста, подтвердите старый адрес, чтобы продолжить изменение адреса электронной почты:"
+          description_add: "Для добавления дополнительного адреса подтвердите существующий адрес электронной почты:"
+          old_email: "Старый адрес электронной почты: %{email}"
+          new_email: "Новый адрес электронной почты: %{email}"
+          confirm_success: "Мы отправили письмо на новый адрес, чтобы подтвердить изменение!"
       change_avatar:
         title: "Изменить аватар"
         gravatar: "На основе <a href='//%{gravatarBaseUrl}%{gravatarLoginUrl}' target='_blank'>%{gravatarName}</a>"
@@ -2329,6 +2341,8 @@ ru:
         filter_for_more: Больше тегов…
         categories_admin_dropdown:
           title: "Управление разделами"
+        bulk_select_topics_dropdown:
+          title: "Массовые действия"
     date_time_picker:
       from: От
       to: До
@@ -2898,6 +2912,7 @@ ru:
     topics:
       new_messages_marker: "последний визит"
       bulk:
+        confirm: "Подтвердить"
         select_all: "Выбрать всё"
         clear_all: "Отменить выбор"
         unlist_topics: "Скрыть темы"
@@ -2972,6 +2987,7 @@ ru:
           few: "Выполнено: <strong>%{count}</strong> темы"
           many: "Выполнено: <strong>%{count}</strong> тем"
           other: "Выполнено: <strong>%{count}</strong> тем"
+        silent: "Выполнить действие без запроса подтверждений."
       none:
         unread: "Нет непрочитанных тем."
         unseen: "Нет непросмотренных тем."
@@ -3001,6 +3017,12 @@ ru:
         hot: "Горячих тем больше нет."
         bookmarks: "Тем, помеченных закладками, больше нет."
         filter: "Тем больше нет."
+    topic_bulk_actions:
+      close_topics:
+        name: "Закрыть темы"
+      update_category:
+        name: "Обновить раздел"
+        description: "Укажите новый раздел для выбранной темы"
     topic:
       filter_to:
         one: "%{count} сообщение в теме"
