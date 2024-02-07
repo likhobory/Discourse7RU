@@ -670,7 +670,7 @@ ru:
         all:
           title: "Все"
       context_question:
-        is_this_post: "Это сообщение — %{reviewable_human_score_types}?"
+        is_this_post: "Это %{reviewable_type} %{reviewable_human_score_types}?"
         delimiter: "или"
         something_else_wrong: "Что-то не так с сообщением %{reviewable_type}?"
       types:
@@ -3713,6 +3713,7 @@ ru:
           off_topic: "Помечено вами как офтопик"
           spam: "Помечено вами как спам"
           inappropriate: "Помечено вами как неуместное"
+          illegal: "Помечено вами как нарушение правил форума"
           notify_moderators: "Вы отправили жалобу модератору"
           notify_user: "Вы отправили сообщение этому пользователю"
       delete:
@@ -3981,10 +3982,12 @@ ru:
         off_topic: "Это офтопик"
         inappropriate: "Это неприемлемо"
         spam: "Это спам"
+        illegal: "Нарушение правил форума"
       custom_placeholder_notify_user: "Будьте точны, конструктивны и доброжелательны."
       notify_user_textarea_label: "Личное сообщение пользователю"
       custom_placeholder_notify_moderators: "Поясните суть проблемы: на что нам следует обратить внимание. Предоставьте соответствующие ссылки и примеры, если это возможно."
       notify_moderators_textarea_label: "Сообщение модераторам"
+      custom_placeholder_illegal: "Сообщите нам, почему вы считаете это сообщение нарушающим правила форума, и по возможности предоставьте соответствующие ссылки и примеры"
       custom_message:
         at_least:
           one: "Введите не менее %{count} символа"
@@ -5646,7 +5649,7 @@ ru:
           instructions: "Настройте шаблон, в котором отображаются все почтовые html-сообщения. Настройте стиль шаблона, используя CSS."
       email:
         title: "Письма"
-        settings: "Настройки"
+        settings: "Настройки электронной почты"
         templates: "Шаблоны"
         templates_title: "Шаблоны электронных писем"
         preview_digest: "Предпросмотр сводки"
@@ -6315,7 +6318,7 @@ ru:
             other: "За последние %{count} дней:"
           value_heading: "Значение"
           requirement_heading: "Требование"
-          visits: "Посещений"
+          posts_read_days: "Прочитано сообщений: уникальных дней"
           days: "Дней"
           topics_replied_to: "Ответов на темы"
           topics_viewed: "Просмотров тем"
@@ -6625,6 +6628,8 @@ ru:
         category_title: "Раздел"
         tag_name: "Имя тега"
         external_url: "Внешняя или относительная ссылка"
+        user_id: "ID пользователя"
+        username: "Имя пользователя"
         destination: "Назначения"
         copy_to_clipboard: "Скопировать ссылку в буфер обмена"
         delete_confirm: Удалить эту постоянную ссылку?

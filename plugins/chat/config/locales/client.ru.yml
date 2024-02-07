@@ -57,6 +57,7 @@ ru:
       cancel_reply: "Отменить ответ"
       chat_channels: "Каналы"
       browse_all_channels: "Просмотреть все каналы"
+      see_in: "См. в"
       move_to_channel:
         title: "Переместить сообщения в канал"
         instructions:
