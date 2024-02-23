@@ -338,7 +338,7 @@ ru:
         open_header: "Канал открыт"
         open: "Открыт"
       browse:
-        back: "Вернуться"
+        back: "Назад"
         title: Каналы
         filter_all: Все
         filter_open: Открытые

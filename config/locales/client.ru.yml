@@ -257,7 +257,7 @@ ru:
     broken_page_change_alert: "Обработчик onPageChange вызвал ошибку. Дополнительную информацию можно найти в инструментах разработчика браузера."
     broken_plugin_alert: "Ошибка из-за плагина '%{name}'"
     critical_deprecation:
-      notice: "<b>[Уведомление администратора]</b> Одну из ваших тем или плагинов необходимо обновить для совместимости с предстоящими ключевыми изменениями в Discourse (<a target='_blank' href='https://meta.discourse.org/t/287211'>more info</a>)."
+      notice: "<b>[Уведомление администратора]</b> Одну из ваших тем или плагинов необходимо обновить для совместимости с предстоящими ключевыми изменениями в Discourse (id:<em>%{id}</em>)."
       theme_source: "Обнаруженная тема: <a target='_blank' href='%{path}'>'%{name}'</a>."
       plugin_source: "Обнаруженный плагин: '%{name}'"
     s3:
@@ -1891,6 +1891,9 @@ ru:
         incorrect_password: "Введён неправильный пароль."
         incorrect_passkey: "Указанный ключ доступа неверен."
         logged_in_as: "Вы вошли на форум как: "
+        forgot_password: "Забыли пароль?"
+        password_reset_email_sent: "Письмо для сброса пароля отправлено."
+        cannot_send_password_reset_email: "Не удалось отправить электронное письмо для сброса пароля."
         instructions: "Для завершения действия подтвердите свою личность."
         fine_print: "Мы просим вас подтвердить свою личность, поскольку это потенциально конфиденциальное действие. Повторную аутентификацию вам будет предложено пройти только через несколько часов отсутствия активности."
       password:
@@ -3020,9 +3023,32 @@ ru:
     topic_bulk_actions:
       close_topics:
         name: "Закрыть темы"
+      archive_topics:
+        name: "Архивировать темы"
+      unlist_topics:
+        name: "Скрыть темы"
+      relist_topics:
+        name: "Отобразить темы"
+      remove_tags:
+        name: "Удалить теги"
+      append_tags:
+        name: "Добавить теги"
+      replace_tags:
+        name: "Заменить теги"
+      delete_topics:
+        name: "Удалить темы"
       update_category:
         name: "Обновить раздел"
         description: "Укажите новый раздел для выбранной темы"
+      reset_bump_dates:
+        name: "Сбросить даты поднятия"
+        description: "Сбросить дату поднятия темы на дату последнего созданного сообщения, что повлияет на порядок тем в списке."
+      defer:
+        name: "Отложить темы"
+        description: "Отметить темы как непрочитанные"
+      update_notifications:
+        name: "Обновить уведомления…"
+        description: "Изменить уровень уведомлений на «Наблюдение», «Отслеживание», «Уведомление» или «Без уведомлений»"
     topic:
       filter_to:
         one: "%{count} сообщение в теме"
@@ -5568,6 +5594,8 @@ ru:
           active_filter: "Активные"
           inactive_filter: "Неавктивные"
           updates_available_filter: "Доступны обновления"
+          schema:
+            back_button: "Назад к %{name}"
         colors:
           select_base:
             title: "Выберите базовую цветовую палитру"

@@ -66,6 +66,10 @@ ru:
     enabled_filter: "Включённые"
     disabled_filter: "Отключённые"
     updates_available_filter: "Доступны обновления"
+  theme_settings:
+    errors:
+      json_value:
+        too_large: "Превышен максимально допустимый размер файла, равный %{max_size} байтам."
   themes:
     bad_color_scheme: "Не удаётся обновить тему, недопустимая цветовая палитра"
     other_error: "При обновлении темы оформления что-то пошло не так"
@@ -116,18 +120,30 @@ ru:
       invalid_yaml: "Неверный формат YAML-файла."
       data_type_inclusion: "Тип `%{name}` не поддерживается. Поддерживаются следующие типы: `integer`, `bool`, `list`, `enum` и `upload`."
       name_too_long: "Есть настройка со слишком длинным названием. Максимальная длина — 255 символов."
-      default_value_missing: "Настройка `%{name}` не имеет значения по умолчанию"
+      default_value_missing: "Настройка `%{name}` не имеет значения по умолчанию."
       default_not_match_type: "Стандартные значения настройки `%{name}` не соответствуют допустимым типам."
-      default_out_range: "Стандартное значения настройки `%{name}` не находится в указанном диапазоне."
+      default_value_not_valid: "Стандартное значения настройки `%{name}` неверно.  %{error_messages}"
       enum_value_not_valid: "Выбранное значение не является одним из вариантов перечисления."
-      number_value_not_valid: "Новое значение находится за пределами допустимого диапазона."
       number_value_not_valid_min_max: "Значение должно быть от %{min} до %{max}."
       number_value_not_valid_min: "Значение должно быть равным или больше чем %{min}"
       number_value_not_valid_max: "Значение должно быть равным или меньше чем %{max}"
-      string_value_not_valid: "Длина нового значения находится за пределами допустимого диапазона."
       string_value_not_valid_min_max: "Допустимый размер — от %{min} до %{max} символов."
       string_value_not_valid_min: "Значение должно быть не менее %{min} символов."
       string_value_not_valid_max: "Значение должно быть не более %{max} символов."
+      objects:
+        required: "Значение не должно быть пустым"
+        invalid_type: "Неверный тип: %{type}"
+        not_valid_string_value: "Значение должно быть строковым"
+        not_valid_integer_value: "Значение должно быть целым числом"
+        not_valid_float_value: "Значение должно быть дробным числом"
+        not_valid_boolean_value: "Значение должно быть логическим"
+        not_valid_enum_value: "Значение должно быть одним из следующих типов: %{choices}"
+        not_valid_category_value: "Значение должно быть идентификатором раздела"
+        string_value_not_valid_min: "Значение должно быть не менее %{min} символов."
+        string_value_not_valid_max: "Значение должно быть не более %{max} символов."
+        number_value_not_valid_min: "Значение должно быть больше или равно %{min}"
+        number_value_not_valid_max: "Значение должно быть меньше или равно %{max}"
+        string_value_not_valid_url: "Значение должно быть URL-адресом"
     locale_errors:
       top_level_locale: "Ключ верхнего уровня в файле локали должен соответствовать имени локали"
       invalid_yaml: "Неверный перевод YAML-файла"
@@ -1557,6 +1573,7 @@ ru:
     v3_analytics_deprecated: "В настоящее время ваш Discourse использует Google Analytics 3, поддержка которой прекратится после июля 2023 года. <a href='https://meta.discourse.org/t/260498'>Обновите сейчас Google Analytics до 4 версии</a >, чтобы продолжать получать необходимую информацию и аналитику для эффективной работы сайта."
     category_style_deprecated: "В настоящее время Discourse использует устаревший стиль разделов, который будет удален перед финальной бета-версией Discourse 3.2. См. тему <a href='https://meta.discourse.org/t/282441'>Moving to a Single Category Style Site Setting</a>, где описано сохранение выбранного стиля раздела."
     ember_version_warning: "Ваш сайт работает с неподдерживаемой конфигурацией EMBER_VERSION=3. Это может привести к непредвиденным проблемам с темами/плагинами. Удалите конфигурацию EMBER_VERSION из файла app.yml и выполните перестройку сайта.  Для получения дополнительной информации см. тему <a href='https:// Meta.discourse.org/t/287211'>https://meta.discourse.org/t/287211</a>."
+    back_from_logster_text: "Назад на сайт"
 
   site_settings:
     allow_bulk_invite: "Разрешить массовые приглашения путём загрузки CSV-файла"
@@ -1732,6 +1749,7 @@ ru:
     content_security_policy_collect_reports: "Включить отчёты о нарушениях CSP в /csp_reports"
     content_security_policy_frame_ancestors: "Ограничить через CSP число тех, кто может встроить этот сайт в iframes. Перечень разрешённых хостов настраивается на закладке <a href='%{base_path}/admin/customize/embedding'>Встраивание</a>."
     content_security_policy_script_src: "Дополнительные источники сценариев в белом списке. Текущий хост и CDN включены по умолчанию. См. <a href='https://meta.discourse.org/t/mitigate-xss-attacks-with-content-security-policy/104243' target='_blank'>Mitigate XSS Attacks with Content Security Policy.</a> (CSP)"
+    content_security_policy_strict_dynamic: "ЭКСПЕРИМЕНТАЛЬНО: Использовать strict-dynamic SCP. Эта политика более гибкая и современная, чем наша стандартная настройка CSP. Политика полностью функциональна, но ещё не протестирована со всеми темами и плагинами."
     invalidate_inactive_admin_email_after_days: "Аккаунты администраторов, которые не посещали сайт в течение указанного здесь количества дней, должны будут повторно подтвердить свой адрес электронной почты перед входом в систему. Для отключения параметра установите это значение в 0."
     include_secure_categories_in_tag_counts: "При включённой настройке: подсчёт количества тем с указанным тегом будет включать темы, находящиеся в разделах, доступных только для просмотра. При выключенной настройке: для обычных пользователей подсчёт количества тем с указанным тегом будет исключать темы, находящиеся в разделах, доступных только для просмотра."
     display_personal_messages_tag_counts: "Показывать количество личных сообщений, помеченных указанным тегом."
@@ -1963,6 +1981,7 @@ ru:
     min_trust_to_post_embedded_media: "Минимальный уровень доверия, необходимый для встраивания медиафайлов в сообщение"
     embedded_media_post_allowed_groups: "Пользователям этих групп разрешено вставлять медиафайлы в сообщение"
     min_trust_level_to_allow_profile_background: "Минимальный уровень доверия, необходимый для загрузки шапки профиля"
+    profile_background_allowed_groups: "Группы, которым разрешено загружать фон профиля пользователя."
     min_trust_level_to_allow_user_card_background: "Минимальный уровень доверия, необходимый для загрузки фона карточки пользователя"
     user_card_background_allowed_groups: "Группы, которым разрешено загружать фон карточки пользователя."
     min_trust_level_to_allow_invite: "Минимальный уровень доверия, необходимый для приглашения пользователей"
@@ -2458,6 +2477,7 @@ ru:
       post_links_allowed_groups: "min_trust_to_post_links"
       user_api_key_allowed_groups: "min_trust_level_for_user_api_key"
       tag_topic_allowed_groups: "min_trust_level_to_tag_topics"
+      profile_background_allowed_groups: "min_trust_level_to_allow_profile_background"
     placeholder:
       discourse_connect_provider_secrets:
         key: "www.example.com"
